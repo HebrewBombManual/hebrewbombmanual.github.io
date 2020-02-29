@@ -2,7 +2,7 @@
 
 An unofficial Hebrew translation of a [Bomb Manual](http://bombmanual.com) for the game [Keep Talking and Nobody Explodes](http://store.steampowered.com/app/341800).
 
-<img src="https://raw.githubusercontent.com/HebrewBombManual/hebrewbombmanual/master/hebrew-bomb-manual.jpg" width="100%"/>
+<img src="https://raw.githubusercontent.com/HebrewBombManual/hebrewbombmanual.github.io/master/preview.jpg" width="100%"/>
 
 ### Features
 

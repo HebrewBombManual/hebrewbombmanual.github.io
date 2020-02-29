@@ -31,7 +31,7 @@ $(document).ready(function () {
 });
 
 $(window).scroll(function() {
-    if ($(this).scrollTop() > 500) {
+    if ($(this).scrollTop() > 500 && $(window).width() > 1023) {
         $('#toTop').fadeIn();
     } else {
         $('#toTop').fadeOut();

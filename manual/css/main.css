@@ -381,13 +381,13 @@ q {
     font-style: italic;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1023px) {
     .mobile-hidden {
-        display: none;
+        display: none !important;
     }
     
     .mobile-show {
-        display: block;
+        display: block !important;
     }
 }
 

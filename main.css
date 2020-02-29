@@ -45,7 +45,7 @@ html {
 
 @font-face {
 	font-family: 'Noto Sans Hebrew';
-	src: url(NotoSansHebrew-Regular.otf);
+	src: url(NotoSansHebrew-Regular.ttf);
 }
 @font-face {
 	font-family: 'Cabin';

@@ -419,11 +419,11 @@ q {
 
 @media only screen and (max-width: 1023px) {
     .mobile-hidden {
-        display: none;
+        display: none  !important;
     }
     
     .mobile-show {
-        display: block;
+        display: block  !important;
     }
 }
 

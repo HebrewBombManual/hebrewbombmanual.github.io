@@ -15,7 +15,7 @@ For the English version of the game:
 
 * **Erel Adoni** - *Initial work* - [E-RELevant](https://github.com/E-RELevant)
 
-See also the list of [contributors](https://github.com/HebrewBombManual/hebrewbombmanual/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/HebrewBombManual/hebrewbombmanual.github.io/contributors) who participated in this project.
 
 ## License
 

@@ -1,6 +1,6 @@
 # Hebrew translation of the Bomb Manual
 
-An unofficial Hebrew translation of a [Bomb Manual](http://bombmanual.com) for the game [Keep Talking and Nobody Explodes](http://store.steampowered.com/app/341800).
+An unofficial Hebrew translation of [Bomb Manual](http://bombmanual.com)![External Link](https://user-images.githubusercontent.com/136959/44433186-de548e80-a56a-11e8-8947-d3331bd6d7a1.png) for the game [Keep Talking and Nobody Explodes](http://store.steampowered.com/app/341800)![External Link](https://user-images.githubusercontent.com/136959/44433186-de548e80-a56a-11e8-8947-d3331bd6d7a1.png).
 
 <img src="https://raw.githubusercontent.com/HebrewBombManual/hebrewbombmanual.github.io/master/preview.jpg" width="100%"/>
 

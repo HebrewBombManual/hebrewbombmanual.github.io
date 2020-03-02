@@ -11,13 +11,15 @@ For the English version of the game:
 * Simplified Hebrew translation (easier to read).
 * Microsoft Excel (`.xlsx`) Ultimate Toolkit for better results.
 
-## Authors
+### Authors
 
 * **Erel Adoni** - *Initial work* - [E-RELevant](https://github.com/E-RELevant)
 
 See also the list of [contributors](https://github.com/HebrewBombManual/hebrewbombmanual.github.io/contributors) who participated in this project.
 
-## License
+## Website
+https://hebrewbombmanual.github.io
+
+### License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
-# hebrewbombmanual.github.io

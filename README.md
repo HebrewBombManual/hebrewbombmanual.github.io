@@ -17,7 +17,7 @@ For the English version of the game:
 
 See also the list of [contributors](https://github.com/HebrewBombManual/hebrewbombmanual.github.io/contributors) who participated in this project.
 
-## Website
+### Website
 https://hebrewbombmanual.github.io
 
 ### License

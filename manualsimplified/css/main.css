@@ -39,7 +39,7 @@ textarea {
 }
 
 html {
-    font-family: 'Special Elite', 'Courier New', monospace;
+    font-family: 'Special Elite', 'Miriam Libre', monospace;
     font-size: 1em;
     line-height: 1.4;
 	font-variant-ligatures: none;
@@ -396,7 +396,6 @@ q {
 
 .gamedisclaimer {
 	font-size: 0.9167em; /* 11pt */
-	font-family: Arial, Helvetica, sans-serif;
 }
 
 @media print {
@@ -555,7 +554,7 @@ q {
 }
 
 .versioning {
-	margin: 3.8em auto 0;
+	margin: 2.5em auto 0
 }
    
 .verification-code {
@@ -710,6 +709,18 @@ q {
     width: 60px;
     height: 60px;
     padding: .2em;
+}
+
+.the-button-table td.diagonalRising
+{
+	background: linear-gradient(to right bottom, #ffffff 0%,#ffffff 49.9%,#000000 50%,#000000 51%,#ffffff 51.1%,#ffffff 100%);
+}
+
+#diagonal-top {
+    text-align:left;
+}
+#diagonal-bottom {
+    text-align:right;
 }
 
 .the-button-option {

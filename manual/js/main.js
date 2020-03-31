@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // Fill in page footers:
-    var pageCount = $(".page").size();
+    /*var pageCount = $(".page").size();
     pageCount -= $(".no-page-count").size();
     var currentPage = 0;
 	var currentBG = 1;
@@ -21,7 +21,7 @@ $(document).ready(function () {
 				currentBG = 1;
 			}
         }
-    });
+    });*/
     
     $("#toTop").click(function(event) {
         event.preventDefault();

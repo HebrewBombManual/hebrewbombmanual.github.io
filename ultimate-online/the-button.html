@@ -1,0 +1,95 @@
+<div class="content" id="the-button">
+    <div class="jumbotron mt-2">
+        <h1 class="display-3">הכפתור</h1>
+        <div class="row">
+            <div class="col-lg-6 col-sm-12">
+                <h4>הסבר:</h4>
+                <ol>
+                    <li>למודול זה כפתור בצבע מסוים עם כיתוב על גביו.</li>
+                    <li>כדי לנטרל את המודול צריך ללחוץ ולשחרר את המודול באחת משתי אפשרויות:</li>
+                    <ul>
+                        <li>לשחרר הכפתור מידית.</li>
+                        <li>ללחוץ על הכפתור ולהתייחס ל"שחרור כפתור מוחזק"</li>
+                    </ul>
+                    <li>האפשרות הנכונה תוגדר לפי צבע וכיתוב הכפתור.</li>
+                </ol>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <h4>אופן השימוש:</h4>
+                <ol>
+                    <li>מנטרל הפצצה מקריא את צבע הכפתור והכיתוב על גביו.</li>
+                    <li>המומחה בוחר את הנתונים בהתאמה לשלב 1.</li>
+                    <li>התוצאה הרצויה תחושב ותוצג מידית.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8 col-sm-12 d-flex">
+            <div class="card border-secondary mb-3 flex-fill">
+                <div class="card-header">כפתור:</div>
+                <div class="card-body text-center">
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <label class="col-form-label" for="btn-color">צבע</label>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons" id="btn-color">
+                                <label class="btn btn-danger">
+                                    <input type="radio" name="options" id="opt1-btn-color-red" autocomplete="off"> אדום
+                                </label>
+                                <label class="btn btn-info">
+                                    <input type="radio" name="options" id="opt2-btn-color-blue" autocomplete="off"> כחול
+                                </label>
+                                <label class="btn btn-light">
+                                    <input type="radio" name="options" id="opt3-btn-color-white" autocomplete="off"> לבן
+                                </label>
+                                <label class="btn btn-primary">
+                                    <input type="radio" name="options" id="opt4-btn-color-black" autocomplete="off"> אחר
+                                </label>
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <label class="col-form-label" for="btn-word">כיתוב</label>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons" id="btn-word">
+                                <label class="btn btn-secondary">
+                                    <input type="radio" name="options" id="opt1-btn-word-abort" autocomplete="off"> ABORT
+                                </label>
+                                <label class="btn btn-secondary">
+                                    <input type="radio" name="options" id="opt2-btn-word-detonate" autocomplete="off"> DETONATE
+                                </label>
+                                <label class="btn btn-secondary">
+                                    <input type="radio" name="options" id="opt3-btn-word-hold" autocomplete="off"> HOLD
+                                </label>
+                                <label class="btn btn-secondary">
+                                    <input type="radio" name="options" id="opt4-btn-word-press" autocomplete="off"> PRESS
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn btn-outline-secondary mt-2">איפוס</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-12">
+            <div class="card border-secondary mb-3">
+                <div class="card-header">תוצאה:</div>
+                <div class="card-body">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+                    </div>
+                    <h4 class="card-title">החזק והתייחס אל "שחרור כפתור מוחזק"</h4>
+                </div>
+            </div>
+            <div class="card border-info mb-3">
+                <div class="card-header">שחרור כפתור מוחזק:</div>
+                <div class="card-body">
+                    <p class="card-text">אם תחזיקו את הכפתור לחוץ, רצועה צבעונית תאיר בצד ימין של המודול. על סמך צבעה, יש לשחרר את הכפתור בנקודת זמן מסוימת:</p>
+                    <ul>
+                        <li>5 = <span style="color:#F39C12;">צהוב</span></li>
+                        <li>4 = <span style="color:#2384C6;">כחול</span></li>
+                        <li>1 = <span style="color:#95A5A6;">כל צבע אחר</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,209 @@
+<div class="content" id="memory">
+    <div class="jumbotron mt-2">
+        <h1 class="display-3">זיכרון</h1>
+        <div class="row">
+            <div class="col-lg-6 col-sm-12">
+                <h4>הסבר:</h4>
+                <ol>
+                    <li>למודול זה צג ו-4 כפתורים.</li>
+                    <li>יש ללחוץ על הכפתור הנכון כדי שהמודול ימשיך אל השלב הבא. כדי לנטרל את המודול יש להשלים את כל 5 השלבים.</li>
+                    <li>לחיצה על כפתור שגוי תאפס את המודול בחזרה לשלב 1.</li>
+                    <li>מיקומי הכפתור מסודרים משמאל לימין.</li>
+                </ol>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <h4>אופן השימוש:</h4>
+                <ol>
+                    <li>מנטרל הפצצה מקריא את המספר המוצג על הצג.</li>
+                    <li>המומחה מנחה את המנטרל על איזה כפתור ללחוץ לפי הטבלה "תוצאה".</li>
+                    <li>מנטרל הפצצה מקריא את הספרה ומיקום הכפתור עליו לוחץ.</li>
+                    <li>המומחה מזין את הנתונים בהתאמה בטבלה "זיכרון".</li>
+                    <ul>
+                        <li>הנתונים יתעדכנו בהתאם בטבלה "תוצאה".</li>
+                    </ul>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="card border-secondary mb-3">
+                <div class="card-header">זיכרון:</div>
+                <div class="card-body text-center">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th class="table-primary" rowspan="2"></th>
+                                <th class="table-primary" scope="col" colspan="4">שלב</th>
+                            </tr>
+                            <tr>
+                                <th scope="col">1</th>
+                                <th scope="col">2</th>
+                                <th scope="col">3</th>
+                                <th scope="col">4</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th class="table-primary align-middle" scope="row">ספרה עליה לחץ המנטרל</th>
+                                <td>
+                                    <div class="form-group">
+                                        <select class="form-control" id="stage-1-number">
+                                            <option></option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <select class="form-control" id="stage-2-number">
+                                            <option></option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <select class="form-control" id="stage-3-number">
+                                            <option></option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <select class="form-control" id="stage-4-number">
+                                            <option></option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="table-primary align-middle" scope="row">מיקום הכפתור עליו לחץ המנטרל</th>
+                                <td>
+                                    <div class="form-group">
+                                        <select class="form-control" id="stage-1-position">
+                                            <option></option>
+                                            <option>ראשון</option>
+                                            <option>שני</option>
+                                            <option>שלישי</option>
+                                            <option>רביעי</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <select class="form-control" id="stage-2-position">
+                                            <option></option>
+                                            <option>ראשון</option>
+                                            <option>שני</option>
+                                            <option>שלישי</option>
+                                            <option>רביעי</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <select class="form-control" id="stage-3-position">
+                                            <option></option>
+                                            <option>ראשון</option>
+                                            <option>שני</option>
+                                            <option>שלישי</option>
+                                            <option>רביעי</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <select class="form-control" id="stage-4-position">
+                                            <option></option>
+                                            <option>ראשון</option>
+                                            <option>שני</option>
+                                            <option>שלישי</option>
+                                            <option>רביעי</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button type="button" class="btn btn-outline-secondary mt-2">איפוס</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="card border-secondary mb-3">
+                <div class="card-header">תוצאה:</div>
+                <div class="card-body text-center">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+                    </div>
+                    <br>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th class="table-primary" rowspan="2" colspan="2"></th>
+                                <th class="table-primary" scope="col" colspan="5">שלב</th>
+                            </tr>
+                            <tr>
+                                <th scope="col">1</th>
+                                <th scope="col">2</th>
+                                <th scope="col">3</th>
+                                <th scope="col">4</th>
+                                <th scope="col">5</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th class="table-primary align-middle" scope="row" rowspan="4">מספר מוצג</th>
+                                <th scope="row">1</th>
+                                <td>מיקום שני</td>
+                                <td>ספרה 4</td>
+                                <td>ספרה ...</td>
+                                <td>מיקום ...</td>
+                                <td>ספרה ...</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>מיקום שני</td>
+                                <td>מיקום ...</td>
+                                <td>ספרה ...</td>
+                                <td>מיקום ראשון</td>
+                                <td>ספרה ...</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>מיקום שלישי</td>
+                                <td>מיקום ראשון</td>
+                                <td>מיקום שלישי</td>
+                                <td>מיקום ...</td>
+                                <td>ספרה ...</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>מיקום רביעי</td>
+                                <td>מיקום ...</td>
+                                <td>ספרה 4</td>
+                                <td>מיקום ...</td>
+                                <td>ספרה ...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

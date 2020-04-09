@@ -1,0 +1,78 @@
+<div class="content" id="morse-code">
+    <div class="jumbotron mt-2">
+        <h1 class="display-3">קוד מורס</h1>
+        <div class="row">
+            <div class="col-lg-6 col-sm-12">
+                <h4>הסבר:</h4>
+                <ol>
+                    <li>למודול זה נורית מהבהבת ומד תדרים.</li>
+                    <li>הלחצנים משמאל ומימין למד התדרים יעברו בין האפשרויות למצב זה.</li>
+                    <li>יש לפרש את האות מהאור המהבהב באמצעות תרשים קוד מורס כדי לאיית אחת מהמילים האפשריות.</li>
+                    <li>האות יחזור על עצמו במעגלים, עם מרווח ארוך בין חזרות.</li>
+                    <li>לאחר זיהוי המילה, קבעו את התדר המתאים ולחצו על כפתור השידור (TX).</li>
+                </ol>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <h4>אופן השימוש:</h4>
+                <ol>
+                    <li>מנטרל הפצצה מקריא את התדר לפי הבהובי הנורית:</li>
+                    <ul>
+                        <li>נקודה = הבהוב קצר.</li>
+                        <li>קו = הבהוב ארוך.</li>
+                        <li>רווח = רווח ארוך בין אותיות (נורית כבויה).</li>
+                    </ul>
+                    <li>המומחה לוחץ על הכפתורים תחת "קוד מורס" בהתאם.</li>
+                    <li>התוצאה הרצויה תחושב ותוצג מידית.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="card border-secondary mb-3">
+                <div class="card-header">קוד מורס:</div>
+                <div class="card-body text-center">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-secondary">נקודה [&nbsp; &#183; &nbsp;]</button>
+                        <button type="button" class="btn btn-secondary">קו [&nbsp; &#8722; &nbsp;]</button>
+                        <button type="button" class="btn btn-secondary">רווח [&nbsp;_&nbsp;]</button>
+                    </div>
+                    <br>
+                    <button type="button" class="btn btn-outline-secondary mt-2">איפוס</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="card border-secondary mb-3">
+                <div class="card-header">תוצאה:</div>
+                <div class="card-body text-center">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+                    </div>
+                    <br>
+                    <table class="morse-answer-table" dir="ltr">
+                        <tr>
+                            <th class="tx" scope="row" colspan="6">3.552</th>
+                        </tr>
+                        <tr>
+                            <th>B</th>
+                            <th>I</th>
+                            <th>S</th>
+                            <th>T</th>
+                            <th>R</th>
+                            <th>O</th>
+                        </tr>
+                        <tr>
+                            <td>&#8722;&#183;&#183;&#183;</td>
+                            <td>&#183;&#183;</td>
+                            <td>&#183;&#183;&#183;</td>
+                            <td>&#8722;</td>
+                            <td>&#183;&#8722;&#183;</td>
+                            <td>&#8722;&#8722;&#8722;</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

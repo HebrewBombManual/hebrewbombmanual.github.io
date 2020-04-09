@@ -1,0 +1,115 @@
+/* 
+ *  Some useful numbers...
+ *
+ *  When font-size is 1em/12pt/16px/100%:
+ *  1px = 0.0625em (when PPI is 96)
+ *  1in = 6em
+ *  1pt = 0.0833333em (1/12em)
+ *
+ */
+
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    position: relative;
+}
+
+body {
+    padding-top: 80px;
+}
+
+.content {
+    min-height: 90vh;
+    max-width: 980px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: block;
+    position: relative;
+}
+
+footer {
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Keypads */
+
+.keypad-image {
+    max-height: 60px;
+    max-width: 60px;
+}
+
+/* Mazes */
+
+.maze-table {
+    width: 40%;
+    margin: 0 auto !important;
+}
+
+.maze-table td {
+    padding: .5rem 1rem;
+    vertical-align: middle;
+    border: 1px solid #dee2e6;
+}
+
+.maze-grid-table {
+    width: 50%;
+    margin: 0 auto !important;
+}
+
+.maze-grid-table td {
+    padding: .5rem 1.03rem;
+    vertical-align: middle;
+}
+
+.maze-grid-table td:nth-child(odd) {
+    background-color: #ECF0F1;
+}
+
+.maze-aids-table td {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* Morse code */
+
+.morse-answer-table {
+    width: 50%;
+    margin: 0 auto !important;
+    font-size: 26px;
+    color: #95A5A6;
+}
+
+.tx {
+    letter-spacing: 2rem;
+    font-size: 40px;
+    color: #212529;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}

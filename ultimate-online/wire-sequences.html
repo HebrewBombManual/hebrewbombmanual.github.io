@@ -1,0 +1,151 @@
+<div class="content" id="wire-sequences">
+    <div class="jumbotron mt-2">
+        <h1 class="display-3">רצפי חוטים</h1>
+        <div class="row">
+            <div class="col-lg-6 col-sm-12">
+                <h4>הסבר:</h4>
+                <ol>
+                    <li>בתוך מודול זה ישנם מספר לוחות עם חוטים עליהם, אך רק לוח אחד גלוי בכל פעם. ניתן לעבור ללוח הבא באמצעות הכפתור למטה וללוח הקודם באמצעות הכפתור למעלה.</li>
+                    <li>אין לעבור ללוח הבא עד שאתם בטוחים שחתכתם את כל החוטים הדרושים בלוח הנוכחי.</li>
+                    <li>יש לחתוך את החוטים לפי ההוראות בטבלה הבאה.</li>
+                    <li>מופעי חוט מצטברים על כל הלוחות במודול.</li>
+                </ol>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <h4>אופן השימוש:</h4>
+                <ol>
+                    <li>מנטרל הפצצה מקריא את צבעי החוטים מלמעלה למטה.</li>
+                    <li>המומחה בוחר את הנתונים בהתאמה לשלב 1.</li>
+                    <li>התוצאה הרצויה תחושב ותוצג מידית.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <div class="card border-secondary mb-3">
+                <div class="card-header text-white bg-danger">מופעי חוט אדום:</div>
+                <div class="card-body text-center">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">לחתוך אם מחובר אל</th>
+                                <th scope="col">סימון</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table-active">
+                                <th scope="row">1</th>
+                                <td>C</td>
+                                <td>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="wire-seq-red-1" checked="">
+                                        <label class="custom-control-label" for="wire-seq-red-1"></label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>B</td>
+                                <td>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="wire-seq-red-2">
+                                        <label class="custom-control-label" for="wire-seq-red-2"></label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>A</td>
+                                <td>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="wire-seq-red-3">
+                                        <label class="custom-control-label" for="wire-seq-red-3"></label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>A / C</td>
+                                <td>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="wire-seq-red-4">
+                                        <label class="custom-control-label" for="wire-seq-red-4"></label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>B</td>
+                                <td>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="wire-seq-red-5">
+                                        <label class="custom-control-label" for="wire-seq-red-5"></label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">6</th>
+                                <td>A / C</td>
+                                <td>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="wire-seq-red-6">
+                                        <label class="custom-control-label" for="wire-seq-red-6"></label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">7</th>
+                                <td>לחתוך</td>
+                                <td>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="wire-seq-red-7">
+                                        <label class="custom-control-label" for="wire-seq-red-7"></label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">8</th>
+                                <td>A / B</td>
+                                <td>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="wire-seq-red-8">
+                                        <label class="custom-control-label" for="wire-seq-red-8"></label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">9</th>
+                                <td>B</td>
+                                <td>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="wire-seq-red-9">
+                                        <label class="custom-control-label" for="wire-seq-red-9"></label>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button type="button" class="btn btn-outline-secondary mt-2">איפוס</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card border-secondary mb-3">
+                <div class="card-header text-white bg-info">מופעי חוט כחול:</div>
+                <div class="card-body text-center">
+                    <button type="button" class="btn btn-outline-secondary mt-2">איפוס</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card border-secondary mb-3">
+                <div class="card-header text-white bg-primary">מופעי חוט שחור:</div>
+                <div class="card-body text-center">
+                    <button type="button" class="btn btn-outline-secondary mt-2">איפוס</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

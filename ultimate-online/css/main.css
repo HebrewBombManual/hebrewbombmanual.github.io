@@ -41,6 +41,10 @@ body {
     position: relative;
 }
 
+.disabled{
+  cursor: not-allowed;
+}
+
 footer {
     color: white;
     position: relative;
@@ -51,8 +55,8 @@ footer {
 /* Keypads */
 
 .keypad-image {
-    max-height: 60px;
-    max-width: 60px;
+    max-height: 70px;
+    max-width: 70px;
 }
 
 /* Mazes */
@@ -100,6 +104,11 @@ footer {
     letter-spacing: 2rem;
     font-size: 40px;
     color: #212529;
+}
+
+/* Who's on First */
+.table-double tbody th:nth-child(2n) {
+    border-right: 2px solid #dee2e6;
 }
 
 /* Small devices (landscape phones, 576px and up) */

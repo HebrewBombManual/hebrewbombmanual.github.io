@@ -24,25 +24,61 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-6">
+        <div class="col-12">
             <div class="card border-secondary mb-3">
+                <div class="card-header">הגדרות מקדימות:</div>
+                <div class="card-body text-center">
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <label class="col-form-label" for="simon-btn-strikes">פסילות</label>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons" id="simon-btn-strikes">
+                                <label class="btn btn-light">
+                                    <input type="radio" name="options" id="simon-btn-strikes-opt1-2" autocomplete="off"> 2
+                                </label>
+                                <label class="btn btn-light">
+                                    <input type="radio" name="options" id="-simon-btn-strikes-opt2-1" autocomplete="off"> 1
+                                </label>
+                                <label class="btn btn-light">
+                                    <input type="radio" name="options" id="-simon-btn-strikes-opt3-0" autocomplete="off"> 0
+                                </label>
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <label class="col-form-label" for="opt-vowel">יש אות ניקוד במספר הסידורי?</label>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons" id="opt-vowel">
+                                <label class="btn btn-light">
+                                    <input type="radio" name="options" name="serial-opt1-no" autocomplete="off"> לא
+                                </label>
+                                <label class="btn btn-light">
+                                    <input type="radio" name="options" name="serial-opt2-yes" autocomplete="off"> כן
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6 d-flex">
+            <div class="card border-secondary mb-3 flex-fill">
                 <div class="card-header">הרצל אמר:</div>
                 <div class="card-body text-center">
                     <ul class="list-group">
                         <li class="list-group-item d-flex justify-content-between align-items-center">
                             <label class="col-form-label" for="simon-btn-color">צבע הבהוב</label>
                             <div class="btn-group btn-group-toggle" data-toggle="buttons" id="simon-btn-color">
-                                <label class="btn btn-danger">
-                                    <input type="radio" name="options" id="opt1-simon-btn-color-red" autocomplete="off"> אדום
+                                <label class="btn btn-light text-danger">
+                                    <input type="radio" name="options" id="simon-btn-color-opt1-red" autocomplete="off"> אדום
                                 </label>
-                                <label class="btn btn-info">
-                                    <input type="radio" name="options" id="opt2-simon-btn-color-blue" autocomplete="off"> כחול
+                                <label class="btn btn-light text-info">
+                                    <input type="radio" name="options" id="-simon-btn-color-opt2-blue" autocomplete="off"> כחול
                                 </label>
-                                <label class="btn btn-warning">
-                                    <input type="radio" name="options" id="opt3-simon-btn-color-yellow" autocomplete="off"> צהוב
+                                <label class="btn btn-light text-warning">
+                                    <input type="radio" name="options" id="-simon-btn-color-opt3-yellow" autocomplete="off"> צהוב
                                 </label>
-                                <label class="btn btn-success">
-                                    <input type="radio" name="options" id="opt4-simon-btn-color-green" autocomplete="off"> ירוק
+                                <label class="btn btn-light text-success">
+                                    <input type="radio" name="options" id="-simon-btn-color-opt4-green" autocomplete="off"> ירוק
                                 </label>
                             </div>
                         </li>
@@ -51,8 +87,8 @@
                 </div>
             </div>
         </div>
-        <div class="col-6">
-            <div class="card border-secondary mb-3">
+        <div class="col-6 d-flex">
+            <div class="card border-secondary mb-3 flex-fill">
                 <div class="card-header">תוצאה:</div>
                 <div class="card-body text-center">
                     <div class="progress">

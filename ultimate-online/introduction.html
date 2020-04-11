@@ -1,72 +1,101 @@
 <div class="content" id="introduction">
-        <div class="jumbotron mt-2">
-            <h1 class="display-3">שלום!</h1>
-            <p class="lead">לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית ושבעגט ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.</p>
-            <hr class="my-3">
-            <p>סחטיר בלובק. תצטנפל בלינדו למרקל אס לכימפו, דול, צוט ומעיוט - לפתיעם ברשג - ולתיעם גדדיש.</p>
-            <p class="lead">
-                <a class="btn btn-primary btn-lg" href="#" role="button">למד עוד</a>
-            </p>
+    <div class="jumbotron mt-2">
+        <h1 class="display-3">שלום!</h1>
+        <p class="lead">לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית ושבעגט ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.</p>
+        <hr class="my-3">
+        <p>סחטיר בלובק. תצטנפל בלינדו למרקל אס לכימפו, דול, צוט ומעיוט - לפתיעם ברשג - ולתיעם גדדיש.</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="#" role="button">למד עוד</a>
+        </p>
+    </div>
+    <div class="row">
+        <div class="col-8">
+            <div class="card border-secondary mb-3">
+                <div class="card-header">אתחול פצצה:</div>
+                <div class="card-body">
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <label class="col-form-label" for="final_serial_digit">
+                                <i class="fa fa-info-circle" aria-hidden="true" data-html="true" data-toggle="tooltip" title="<img src='img/introduction/serial-last-digit.jpg' />" style="color:#2992FF;"></i>
+                                ספרה אחרונה במספר הסידורי
+                            </label>
+                            <input class="col-3 form-control" type="number" name="final_serial_digit" placeholder="ספרה (0-9)" min="0" max="9" maxlength="1" oninput="maxLengthCheck(this)">
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <label class="col-form-label" for="batteries">
+                                <i class="fa fa-info-circle" aria-hidden="true" data-html="true" data-toggle="tooltip" title="<img src='img/introduction/batteries.jpg' />" style="color:#2992FF;"></i>
+                                מספר סוללות
+                            </label>
+                            <input class="col-3 form-control" type="number" name="batteries" placeholder="ספרה (0-9)" min="0" max="9" maxlength="1" oninput="maxLengthCheck(this)">
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <label class="col-form-label" for="opt-vowel">
+                                <i class="fa fa-info-circle" aria-hidden="true" data-html="true" data-toggle="tooltip" title="<img src='img/introduction/serial-vowel.jpg' />" style="color:#2992FF;"></i>
+                                יש אות ניקוד במספר הסידורי?
+                            </label>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons" id="opt-vowel">
+                                <label class="btn btn-light">
+                                    <input type="radio" name="options" name="serial-opt1-no" autocomplete="off"> לא
+                                </label>
+                                <label class="btn btn-light">
+                                    <input type="radio" name="options" name="serial-opt2-yes" autocomplete="off"> כן
+                                </label>
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <label class="col-form-label" for="btn-word">
+                                <i class="fa fa-info-circle" aria-hidden="true" data-html="true" data-toggle="tooltip" title="<img src='img/introduction/indicator-car.jpg' />" style="color:#2992FF;"></i>
+                                יש נורת בקרה CAR?
+                            </label>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons" data-id="btn-word">
+                                <label class="btn btn-light text-primary">
+                                    <input type="radio" name="options" data-id="btn-indicator-car-opt1-no" autocomplete="off"> לא
+                                </label>
+                                <label class="btn btn-light text-primary">
+                                    <input type="radio" name="options" data-id="btn-indicator-car-opt1-yes" autocomplete="off"> כן
+                                </label>
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <label class="col-form-label" for="btn-word">
+                                <i class="fa fa-info-circle" aria-hidden="true" data-html="true" data-toggle="tooltip" title="<img src='img/introduction/indicator-frk.jpg' />" style="color:#2992FF;"></i>
+                                יש נורת בקרה FRK?
+                            </label>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons" data-id="btn-word">
+                                <label class="btn btn-light text-primary">
+                                    <input type="radio" name="options" data-id="btn-indicator-frk-opt1-no" autocomplete="off"> לא
+                                </label>
+                                <label class="btn btn-light text-primary">
+                                    <input type="radio" name="options" data-id="btn-indicator-frk-opt1-yes" autocomplete="off"> כן
+                                </label>
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <label class="col-form-label" for="opt-parallel">
+                                <i class="fa fa-info-circle" aria-hidden="true" data-html="true" data-toggle="tooltip" title="<img src='img/introduction/parallel-port.jpg' />" style="color:#2992FF;"></i>
+                                יש מחבר מקבילי (Parallel)?
+                            </label>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons" id="opt-parallel">
+                                <label class="btn btn-light">
+                                    <input type="radio" name="options" name="parallel-opt1-no" autocomplete="off"> לא
+                                </label>
+                                <label class="btn btn-light">
+                                    <input type="radio" name="options" name="parallel-opt2-yes" autocomplete="off"> כן
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="row">
-            <div class="col-lg-5 col-sm-12">
-                <div class="card border-secondary mb-3">
-                    <div class="card-header">אתחול פצצה:</div>
-                    <div class="card-body">
-                        <ul class="list-group">
-                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                <label class="col-7 col-form-label" for="serialLastDigit">ספרה אחרונה במספר סיריאלי</label>
-                                <input class="col-5 form-control" type="number" name="final_serial_digit" placeholder="ספרה (0-9)" min="0" max="9" maxlength="1" oninput="maxLengthCheck(this)">
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                                <label class="col-7 col-form-label" for="batteries">מספר סוללות</label>
-                                <input class="col-5 form-control" type="number" placeholder="ספרה (0-9)" min="0" max="9" maxlength="1" oninput="maxLengthCheck(this)" id="batteries">
-                            </li>
-                            <li class="list-group-item d-flex align-items-center">
-                                <label class="col-7 col-form-label" for="opt-vowel">יש אות ניקוד במספר סיריאלי?</label>
-                                <div class="btn-group btn-group-toggle" data-toggle="buttons" id="opt-vowel">
-                                    <label class="btn btn-secondary">
-                                        <input type="radio" name="options" id="opt1-serial-no" autocomplete="off"> לא
-                                    </label>
-                                    <label class="btn btn-secondary">
-                                        <input type="radio" name="options" id="opt1-serial-yes" autocomplete="off"> כן
-                                    </label>
-                                </div>
-                            </li>
-                            <li class="list-group-item d-flex align-items-center">
-                                <label class="col-7 col-form-label" for="opt-frk">יש תוויות FRK?</label>
-                                <div class="btn-group btn-group-toggle" data-toggle="buttons" id="opt-frk">
-                                    <label class="btn btn-secondary">
-                                        <input type="radio" name="options" id="opt1-frk-no" autocomplete="off"> לא
-                                    </label>
-                                    <label class="btn btn-secondary">
-                                        <input type="radio" name="options" id="opt1-frk-yes" autocomplete="off"> כן
-                                    </label>
-                                </div>
-                            </li>
-                            <li class="list-group-item d-flex align-items-center">
-                                <label class="col-7 col-form-label" for="opt-parallel">יש מחבר מקבילי (Parallel)?</label>
-                                <div class="btn-group btn-group-toggle" data-toggle="buttons" id="opt-parallel">
-                                    <label class="btn btn-secondary">
-                                        <input type="radio" name="options" id="opt1-parallel-no" autocomplete="off"> לא
-                                    </label>
-                                    <label class="btn btn-secondary">
-                                        <input type="radio" name="options" id="opt1-parallel-yes" autocomplete="off"> כן
-                                    </label>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                </div>
-            <div class="col-lg-7 col-sm-12">
-                <div class="card border-secondary mb-3">
-                    <div class="card-header">Header</div>
-                    <div class="card-body">
-                        <h4 class="card-title">Secondary card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
+        <div class="col-lg-4 col-sm-12">
+            <div class="card border-secondary mb-3">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                    <h4 class="card-title">Secondary card title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
             </div>
         </div>
     </div>
+</div>

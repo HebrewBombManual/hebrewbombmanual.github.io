@@ -28,20 +28,20 @@
                     <ul class="list-group">
                         <li class="list-group-item d-flex justify-content-between align-items-center">
                             <label class="col-form-label" for="wire1">#1</label>
-                            <div class="btn-group btn-group-toggle" data-toggle="buttons" data-data-id="wire1">
-                                <label class="btn btn-light text-danger" name="wires-radio-label">
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons" data-id="wire1">
+                                <label class="btn btn-light text-danger" name="wires-radio-label" data-wire="1">
                                     <input type="radio" name="options" data-id="wire1-opt1" data-color="red" autocomplete="off"> אדום
                                 </label>
-                                <label class="btn btn-light text-info" name="wires-radio-label">
+                                <label class="btn btn-light text-info" name="wires-radio-label" data-wire="1">
                                     <input type="radio" name="options" data-id="wire1-opt2" data-color="blue" autocomplete="off"> כחול
                                 </label>
-                                <label class="btn btn-light text-secondary" name="wires-radio-label">
+                                <label class="btn btn-light text-secondary" name="wires-radio-label" data-wire="1">
                                     <input type="radio" name="options" data-id="wire1-opt3" data-color="white" autocomplete="off"> לבן
                                 </label>
-                                <label class="btn btn-light text-warning" name="wires-radio-label">
+                                <label class="btn btn-light text-warning" name="wires-radio-label" data-wire="1">
                                     <input type="radio" name="options" data-id="wire1-opt4" data-color="yellow" autocomplete="off"> צהוב
                                 </label>
-                                <label class="btn btn-light text-primary" name="wires-radio-label">
+                                <label class="btn btn-light text-primary" name="wires-radio-label" data-wire="1">
                                     <input type="radio" name="options" data-id="wire1-opt5" data-color="black" autocomplete="off"> שחור
                                 </label>
                             </div>
@@ -49,113 +49,139 @@
                         <li class="list-group-item d-flex justify-content-between align-items-center">
                             <label class="col-form-label" for="wire2">#2</label>
                             <div class="btn-group btn-group-toggle" data-toggle="buttons" data-id="wire2">
-                                <label class="btn btn-light text-danger" name="wires-radio-label">
+                                <label class="btn btn-light text-danger disabled" name="wires-radio-label" data-wire="2">
                                     <input type="radio" name="options" data-id="wire2-opt1" data-color="red" autocomplete="off"> אדום
                                 </label>
-                                <label class="btn btn-light text-info" name="wires-radio-label">
+                                <label class="btn btn-light text-info disabled" name="wires-radio-label" data-wire="2">
                                     <input type="radio" name="options" data-id="wire2-opt2" data-color="blue" autocomplete="off"> כחול
                                 </label>
-                                <label class="btn btn-light text-secondary" name="wires-radio-label">
+                                <label class="btn btn-light text-secondary disabled" name="wires-radio-label" data-wire="2">
                                     <input type="radio" name="options" data-id="wire2-opt3" data-color="white" autocomplete="off"> לבן
                                 </label>
-                                <label class="btn btn-light text-warning" name="wires-radio-label">
+                                <label class="btn btn-light text-warning disabled" name="wires-radio-label" data-wire="2">
                                     <input type="radio" name="options" data-id="wire2-opt4" data-color="yellow" autocomplete="off"> צהוב
                                 </label>
-                                <label class="btn btn-light text-primary" name="wires-radio-label">
+                                <label class="btn btn-light text-primary disabled" name="wires-radio-label" data-wire="2">
                                     <input type="radio" name="options" data-id="wire2-opt5" data-color="black" autocomplete="off"> שחור
                                 </label>
                             </div>
                         </li>
                         <li class="list-group-item d-flex justify-content-between align-items-center">
-                            <label class="col-form-label" for="wire1">#3</label>
-                            <div class="btn-group btn-group-toggle" data-toggle="buttons" data-data-id="wire3">
-                                <label class="btn btn-light text-danger" name="wires-radio-label">
+                            <label class="col-form-label" for="wire3">#3</label>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons" data-id="wire3">
+                                <label class="btn btn-light text-danger disabled" name="wires-radio-label" data-wire="3">
                                     <input type="radio" name="options" data-id="wire3-opt1" data-color="red" autocomplete="off"> אדום
                                 </label>
-                                <label class="btn btn-light text-info" name="wires-radio-label">
+                                <label class="btn btn-light text-info disabled" name="wires-radio-label" data-wire="3">
                                     <input type="radio" name="options" data-id="wire3-opt2" data-color="blue" autocomplete="off"> כחול
                                 </label>
-                                <label class="btn btn-light text-secondary" name="wires-radio-label">
+                                <label class="btn btn-light text-secondary disabled" name="wires-radio-label" data-wire="3">
                                     <input type="radio" name="options" data-id="wire3-opt3" data-color="white" autocomplete="off"> לבן
                                 </label>
-                                <label class="btn btn-light text-warning" name="wires-radio-label">
+                                <label class="btn btn-light text-warning disabled" name="wires-radio-label" data-wire="3">
                                     <input type="radio" name="options" data-id="wire3-opt4" data-color="yellow" autocomplete="off"> צהוב
                                 </label>
-                                <label class="btn btn-light text-primary" name="wires-radio-label">
+                                <label class="btn btn-light text-primary disabled" name="wires-radio-label" data-wire="3">
                                     <input type="radio" name="options" data-id="wire3-opt5" data-color="black" autocomplete="off"> שחור
                                 </label>
                             </div>
                         </li>
                         <li class="list-group-item d-flex justify-content-between align-items-center">
-                            <label class="col-form-label" for="wire1">#4</label>
+                            <label class="col-form-label" for="wire4">#4</label>
                             <div class="btn-group btn-group-toggle" data-toggle="buttons" data-id="wire4">
-                                <label class="btn btn-light text-danger" name="wires-radio-label">
+                                <label class="btn btn-light text-danger disabled" name="wires-radio-label" data-wire="4">
                                     <input type="radio" name="options" data-id="wire4-opt1" data-color="red" autocomplete="off"> אדום
                                 </label>
-                                <label class="btn btn-light text-info" name="wires-radio-label">
+                                <label class="btn btn-light text-info disabled" name="wires-radio-label" data-wire="4">
                                     <input type="radio" name="options" data-id="wire4-opt2" data-color="blue" autocomplete="off"> כחול
                                 </label>
-                                <label class="btn btn-light text-secondary" name="wires-radio-label">
+                                <label class="btn btn-light text-secondary disabled" name="wires-radio-label" data-wire="4">
                                     <input type="radio" name="options" data-id="wire4-opt3" data-color="white" autocomplete="off"> לבן
                                 </label>
-                                <label class="btn btn-light text-warning" name="wires-radio-label">
+                                <label class="btn btn-light text-warning disabled" name="wires-radio-label" data-wire="4">
                                     <input type="radio" name="options" data-id="wire4-opt4" data-color="yellow" autocomplete="off"> צהוב
                                 </label>
-                                <label class="btn btn-light text-primary" name="wires-radio-label">
+                                <label class="btn btn-light text-primary disabled" name="wires-radio-label" data-wire="4">
                                     <input type="radio" name="options" data-id="wire4-opt5" data-color="black" autocomplete="off"> שחור
                                 </label>
                             </div>
                         </li>
                         <li class="list-group-item d-flex justify-content-between align-items-center">
-                            <label class="col-form-label" for="wire1">#5</label>
+                            <label class="col-form-label" for="wire5">#5</label>
                             <div class="btn-group btn-group-toggle" data-toggle="buttons" data-id="wire5">
-                                <label class="btn btn-light text-danger" name="wires-radio-label">
+                                <label class="btn btn-light text-danger disabled" name="wires-radio-label" data-wire="5">
                                     <input type="radio" name="options" data-id="wire5-opt1" data-color="red" autocomplete="off"> אדום
                                 </label>
-                                <label class="btn btn-light text-info" name="wires-radio-label">
+                                <label class="btn btn-light text-info disabled" name="wires-radio-label" data-wire="5">
                                     <input type="radio" name="options" data-id="wire5-opt2" data-color="blue" autocomplete="off"> כחול
                                 </label>
-                                <label class="btn btn-light text-secondary" name="wires-radio-label">
+                                <label class="btn btn-light text-secondary disabled" name="wires-radio-label" data-wire="5">
                                     <input type="radio" name="options" data-id="wire5-opt3" data-color="white" autocomplete="off"> לבן
                                 </label>
-                                <label class="btn btn-light text-warning" name="wires-radio-label">
+                                <label class="btn btn-light text-warning disabled" name="wires-radio-label" data-wire="5">
                                     <input type="radio" name="options" data-id="wire5-opt4" data-color="yellow" autocomplete="off"> צהוב
                                 </label>
-                                <label class="btn btn-light text-primary" name="wires-radio-label">
+                                <label class="btn btn-light text-primary disabled" name="wires-radio-label" data-wire="5">
                                     <input type="radio" name="options" data-id="wire5-opt5" data-color="black" autocomplete="off"> שחור
                                 </label>
                             </div>
                         </li>
                         <li class="list-group-item d-flex justify-content-between align-items-center">
-                            <label class="col-form-label" for="wire1">#6</label>
+                            <label class="col-form-label" for="wire6">#6</label>
                             <div class="btn-group btn-group-toggle" data-toggle="buttons" data-id="wire6">
-                                <label class="btn btn-light text-danger" name="wires-radio-label">
+                                <label class="btn btn-light text-danger disabled" name="wires-radio-label" data-wire="6">
                                     <input type="radio" name="options" data-id="wire6-opt" data-color="red" autocomplete="off"> אדום
                                 </label>
-                                <label class="btn btn-light text-info" name="wires-radio-label">
+                                <label class="btn btn-light text-info disabled" name="wires-radio-label" data-wire="6">
                                     <input type="radio" name="options" data-id="wire6-opt2" data-color="blue" autocomplete="off"> כחול
                                 </label>
-                                <label class="btn btn-light text-secondary" name="wires-radio-label">
+                                <label class="btn btn-light text-secondary disabled" name="wires-radio-label" data-wire="6">
                                     <input type="radio" name="options" data-id="wire6-opt3" autocomplete="off"> לבן
                                 </label>
-                                <label class="btn btn-light text-warning" name="wires-radio-label">
+                                <label class="btn btn-light text-warning disabled" name="wires-radio-label" data-wire="6">
                                     <input type="radio" name="options" data-id="wire6-opt4" data-color="yellow" autocomplete="off"> צהוב
                                 </label>
-                                <label class="btn btn-light text-primary" name="wires-radio-label">
+                                <label class="btn btn-light text-primary disabled" name="wires-radio-label" data-wire="6">
                                     <input type="radio" name="options" data-id="wire6-opt5" data-color="black" autocomplete="off"> שחור
                                 </label>
                             </div>
                         </li>
                     </ul>
-                    <button type="button" class="btn btn-outline-secondary btn-wires-reset mt-2">איפוס</button>
+                    <button type="button" class="btn btn-outline-secondary mt-2" name="btn-reset-all-wires">איפוס</button>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary mt-2" data-toggle="modal" data-target="#spontaneousFinalDigitCheckModal">Modal Test</button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="spontaneousFinalDigitCheckModal" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">חסרים נתונים!</h5>
+                                    <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close" name="missingDataClose">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>-->
+                                </div>
+                                <div class="modal-body">
+                                    <label class="col-form-label text-danger" name="warning">לא ניתן להמשיך ללא הזנת נתונים!</label>
+                                    <br>
+                                    <label class="col-6 col-form-label">ספרה אחרונה במספר הסידורי</label>
+                                    <input class="col-4 form-control" type="number" name="final_serial_digit" placeholder="ספרה (0-9)" min="0" max="9" maxlength="1" oninput="maxLengthCheck(this)">
+                                </div>
+                                <!--<div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal" name="missingDataClose">סגור</button>
+                                    <button type="button" class="btn btn-primary">שמור שינויים</button>
+                                </div>-->
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="col-lg-4 col-sm-12">
             <div class="card border-secondary mb-3">
                 <div class="card-header">תוצאה:</div>
-                <div class="card-body">
-                    <p class="card-text">יש לחתוך את</p>
+                <div class="card-body text-center">
+                    <p class="card-text">יש לחתוך</p>
                     <p><i class="fa fa-2x fa-refresh fa-spin" data-toggle="tooltip" data-placement="top" title="יש לסמן לפחות 3 חוטים"></i></p>
                     <h4 class="card-title wires-result d-none"></h4>
                 </div>

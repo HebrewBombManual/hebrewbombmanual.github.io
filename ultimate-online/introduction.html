@@ -15,72 +15,72 @@
                 <div class="card-body">
                     <ul class="list-group">
                         <li class="list-group-item d-flex justify-content-between align-items-center">
-                            <label class="col-form-label" for="final_serial_digit">
+                            <label class="col-form-label">
                                 <i class="fa fa-info-circle" aria-hidden="true" data-html="true" data-toggle="tooltip" title="<img src='img/introduction/serial-last-digit.jpg' />" style="color:#2992FF;"></i>
                                 ספרה אחרונה במספר הסידורי
                             </label>
-                            <input class="col-3 form-control" type="number" name="final_serial_digit" placeholder="ספרה (0-9)" min="0" max="9" maxlength="1" oninput="maxLengthCheck(this)">
+                            <input class="col-3 form-control" type="number" placeholder="ספרה (0-9)" min="0" max="9" maxlength="1" oninput="maxLengthCheck(this)" data-id="final_serial_digit">
                         </li>
                         <li class="list-group-item d-flex justify-content-between align-items-center">
-                            <label class="col-form-label" for="batteries">
+                            <label class="col-form-label">
                                 <i class="fa fa-info-circle" aria-hidden="true" data-html="true" data-toggle="tooltip" title="<img src='img/introduction/batteries.jpg' />" style="color:#2992FF;"></i>
                                 מספר סוללות
                             </label>
-                            <input class="col-3 form-control" type="number" name="batteries" placeholder="ספרה (0-9)" min="0" max="9" maxlength="1" oninput="maxLengthCheck(this)">
+                            <input class="col-3 form-control" type="number" placeholder="ספרה (0-9)" min="0" max="9" maxlength="1" oninput="maxLengthCheck(this)" data-id="batteries">
                         </li>
                         <li class="list-group-item d-flex justify-content-between align-items-center">
-                            <label class="col-form-label" for="opt-vowel">
+                            <label class="col-form-label">
                                 <i class="fa fa-info-circle" aria-hidden="true" data-html="true" data-toggle="tooltip" title="<img src='img/introduction/serial-vowel.jpg' />" style="color:#2992FF;"></i>
                                 יש אות ניקוד במספר הסידורי?
                             </label>
-                            <div class="btn-group btn-group-toggle" data-toggle="buttons" id="opt-vowel">
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                 <label class="btn btn-light">
-                                    <input type="radio" name="options" name="serial-opt1-no" autocomplete="off"> לא
+                                    <input type="radio" name="vowel-options" autocomplete="off" data-id="vowel-opt1" value="no"> לא
                                 </label>
                                 <label class="btn btn-light">
-                                    <input type="radio" name="options" name="serial-opt2-yes" autocomplete="off"> כן
+                                    <input type="radio" name="vowel-options" autocomplete="off" data-id="vowel-opt2" value="yes"> כן
                                 </label>
                             </div>
                         </li>
                         <li class="list-group-item d-flex justify-content-between align-items-center">
-                            <label class="col-form-label" for="btn-word">
+                            <label class="col-form-label">
                                 <i class="fa fa-info-circle" aria-hidden="true" data-html="true" data-toggle="tooltip" title="<img src='img/introduction/indicator-car.jpg' />" style="color:#2992FF;"></i>
                                 יש נורת בקרה CAR?
                             </label>
-                            <div class="btn-group btn-group-toggle" data-toggle="buttons" data-id="btn-word">
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                 <label class="btn btn-light text-primary">
-                                    <input type="radio" name="options" data-id="btn-indicator-car-opt1-no" autocomplete="off"> לא
+                                    <input type="radio" name="car-options" autocomplete="off" data-id="indicator-car-opt1" value="no"> לא
                                 </label>
                                 <label class="btn btn-light text-primary">
-                                    <input type="radio" name="options" data-id="btn-indicator-car-opt1-yes" autocomplete="off"> כן
+                                    <input type="radio" name="car-options" autocomplete="off" data-id="indicator-car-opt2" value="yes"> כן
                                 </label>
                             </div>
                         </li>
                         <li class="list-group-item d-flex justify-content-between align-items-center">
-                            <label class="col-form-label" for="btn-word">
+                            <label class="col-form-label">
                                 <i class="fa fa-info-circle" aria-hidden="true" data-html="true" data-toggle="tooltip" title="<img src='img/introduction/indicator-frk.jpg' />" style="color:#2992FF;"></i>
                                 יש נורת בקרה FRK?
                             </label>
-                            <div class="btn-group btn-group-toggle" data-toggle="buttons" data-id="btn-word">
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                 <label class="btn btn-light text-primary">
-                                    <input type="radio" name="options" data-id="btn-indicator-frk-opt1-no" autocomplete="off"> לא
+                                    <input type="radio" name="frk-options" autocomplete="off" data-id="indicator-frk-opt1" value="no"> לא
                                 </label>
                                 <label class="btn btn-light text-primary">
-                                    <input type="radio" name="options" data-id="btn-indicator-frk-opt1-yes" autocomplete="off"> כן
+                                    <input type="radio" name="frk-options" autocomplete="off" data-id="indicator-frk-opt2" value="yes"> כן
                                 </label>
                             </div>
                         </li>
                         <li class="list-group-item d-flex justify-content-between align-items-center">
-                            <label class="col-form-label" for="opt-parallel">
+                            <label class="col-form-label">
                                 <i class="fa fa-info-circle" aria-hidden="true" data-html="true" data-toggle="tooltip" title="<img src='img/introduction/parallel-port.jpg' />" style="color:#2992FF;"></i>
                                 יש מחבר מקבילי (Parallel)?
                             </label>
-                            <div class="btn-group btn-group-toggle" data-toggle="buttons" id="opt-parallel">
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                 <label class="btn btn-light">
-                                    <input type="radio" name="options" name="parallel-opt1-no" autocomplete="off"> לא
+                                    <input type="radio" name="options" autocomplete="off" data-id="parallel-opt1" value="no"> לא
                                 </label>
                                 <label class="btn btn-light">
-                                    <input type="radio" name="options" name="parallel-opt2-yes" autocomplete="off"> כן
+                                    <input type="radio" name="options" autocomplete="off" data-id="parallel-opt2" value="yes"> כן
                                 </label>
                             </div>
                         </li>

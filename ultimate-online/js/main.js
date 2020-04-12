@@ -21,35 +21,26 @@ var bomb = {
     memory_labels: {}
 }
 
+// Reset Objects
+let reset = (obj) => {
+  Object.keys(obj).map(key => {
+    if (obj[key] instanceof Array) obj[key] = []
+    else obj[key] = null
+  })
+}
+
+// --- Wires
 var wires_keys = {
     first: null,
     second: null,
     third: null,
-    forth: null,
+    fourth: null,
     fifth: null,
     sixth: null
 }
 
-// --- Wires
 var wires = {
-    keys: wires_keys,
-
-    // save initial values
-    init: function () {
-        var origValues = {};
-        for (var prop in this) {
-            if (this.hasOwnProperty(prop) && prop != "origValues") {
-                origValues[prop] = this[prop];
-            }
-        }
-        this.origValues = origValues;
-    },
-    // restore initial values
-    reset: function () {
-        for (var prop in this.origValues) {
-            this[prop] = this.origValues[prop];
-        }
-    }
+    keys: wires_keys
 }
 
 // --- The Button
@@ -62,9 +53,6 @@ var button = {
 
 $(function () {
 
-    /* ---------- Objects initialization ---------- */
-    wires.init();
-
     /* ---------- Main ---------- */
 
     // First load -> introduction.html
@@ -76,26 +64,57 @@ $(function () {
     $('body').on('click', 'a[data-target]', e => {
         e.preventDefault();
         let target = e.currentTarget.dataset.target;
-        $.get(target, response => {
-            $('#page').html(response);
 
-            // Nav-bar
-            $('.nav-item').removeClass('active');
-            $(e.currentTarget).parent('.nav-item').addClass('active');
+        $.ajax({
+            url: target,
+            method: 'get',
+            cache: false,
+            success: (res) => {
+                $('#page').html(res);
+
+                // Nav-bar
+                $('.nav-item').removeClass('active');
+                $(e.currentTarget).parent('.nav-item').addClass('active');
+            }
         }).done(() => {
+            if (target == 'introduction.html') {
+                if (bomb.final_digit)
+                    $('input[data-id="final_serial_digit"]').val(bomb.final_digit);
+                if (bomb.battery_count)
+                    $('input[data-id="batteries"]').val(bomb.battery_count);
+                if (bomb.vowel != null) {
+                    if (bomb.vowel)
+                        $('input[data-id="vowel-opt2"]').parent().addClass('active');
+                    else
+                        $('input[data-id="vowel-opt1"]').parent().addClass('active');
+                }
+                if (bomb.indicator_car != null) {
+                    if (bomb.indicator_car)
+                        $('input[data-id="indicator-car-opt2"]').parent().addClass('active');
+                    else
+                        $('input[data-id="indicator-car-opt1"]').parent().addClass('active');
+                }
+                if (bomb.indicator_car != null) {
+                    if (bomb.indicator_car)
+                        $('input[data-id="indicator-frk-opt2"]').parent().addClass('active');
+                    else
+                        $('input[data-id="indicator-frk-opt1"]').parent().addClass('active');
+                }
+                if (bomb.parallel_port != null) {
+                    if (bomb.parallel_port)
+                        $('input[data-id="parallel-opt2"]').parent().addClass('active');
+                    else
+                        $('input[data-id="parallel-opt1"]').parent().addClass('active');
+                }
+            }
             
-            /* ---------- Check target and load variables ---------- */
-            /*if (target == 'the-button.html') {
-                //$('input element id').val(wires.last_digit_odd);
-            } else if () {
-                //load        
-            }*/
-
             /* ---------- Objects resets ---------- */
-
-            wires.reset();
-
+            
+            reset(wires.keys);
+            
         });
+
+        return;
     });
 
     // Tooltips
@@ -106,8 +125,11 @@ $(function () {
     /* ---------- Bomb initializion ---------- */
 
     // final_digit & final_digit_odd
-    $('body').on('keyup', 'input[name="final_serial_digit"]', function () {
+    $('body').on('keyup', 'input[data-id="final_serial_digit"]', function () {
         if ($(this).val() != "") {
+
+            console.log('Value', $(this).val(), 'entered');
+
             bomb.final_digit = $(this).val();
             if (bomb.final_digit % 2 == 0)
                 bomb.final_digit_odd = false;
@@ -115,18 +137,53 @@ $(function () {
                 bomb.final_digit_odd = true;
 
             $('#spontaneousFinalDigitCheckModal').modal('hide');
-            $('label[data-wire="5"]').removeClass("disabled");
-            if (objectCountNotNull(wires.keys) > 2)
-                wires_show_result();
+
+            // Only after value entered - > calculate
+            wires_triggered(bomb.final_digit_odd);
         }
     });
 
     // battery_count
-    $('body').on('keyup', 'input[name="batteries"]', function () {
+    $('body').on('keyup', 'input[data-id="batteries"]', function () {
         if ($(this).val() != "") {
             bomb.battery_count = $(this).val();
             $('#spontaneousButtonDataCheckModal').modal('hide');
         }
+    });
+
+    // Input:  radio-button selector
+    // Output: value of the selected radio-button
+    radioCheckedOptionValue = (selector) => {
+        $.each($(selector), (i, v) => {
+            if ($(v).prop('checked')) {
+                console.log($(v).val());
+                return $(v).val();
+            }
+        });
+    }
+
+    // vowel
+    $('body').on('click', 'input[name="vowel-options"]', function () {
+        if ($(this).val() == 'yes')
+            bomb.vowel = true;
+        else
+            bomb.vowel = false;
+    });
+
+    // indicator_car
+    $('body').on('click', 'input[name="car-options"]', function () {
+        if ($(this).val() == 'yes')
+            bomb.vowel = true;
+        else
+            bomb.vowel = false;
+    });
+
+    // indicator_frk
+    $('body').on('click', 'input[name="frk-options"]', function () {
+        if ($(this).val() == 'yes')
+            bomb.vowel = true;
+        else
+            bomb.vowel = false;
     });
 
 
@@ -171,7 +228,7 @@ $(function () {
     function wires_four() {
         if (getOccurrences(getWiresColors(), "red") > 1 && bomb.final_digit_odd == true)
             return "חוט אדום אחרון";
-        else if (wires.keys.forth == "yellow" && getOccurrences(getWiresColors(), "red") == 0)
+        else if (wires.keys.fourth == "yellow" && getOccurrences(getWiresColors(), "red") == 0)
             return "חוט ראשון";
         else if (getOccurrences(getWiresColors(), "blue") == 1)
             return "חוט ראשון";
@@ -229,90 +286,69 @@ $(function () {
         $(".wires-result").removeClass("d-block").addClass("d-none"); // Shows loading animation
     }
 
-    /*let wiresKeys = Object.entries(wires);
-    
-    for(i=1; i<=wiresKeys.length; i++) {
-        var currentKey = wiresKeys[i][0];
-        
-        $('body').on('click', 'input[data-id*="wire'+i+'-opt"]', function() {
-            if (wires.currentKey[0] == true) {
-                wires.count++;
-                wires.currentKey[0] = false;
+    // One of the wire's radio-buttons is triggered
+    $('body').on('click', 'input[name="options"]', function () {
+        wires_triggered(bomb.final_digit_odd);
+        // there are at least 3 wires -> solve & show result
+        if (objectCountNotNull(wires.keys) > 2)
+            wires_show_result();
+    });
+
+    // 1. Saves the chosen color into wires.keys
+    // 2. Removes "disabled" class for the next wire
+    wires_triggered = (final_digit_odd) => {
+        var elements = $('input[name="options"]');
+
+        $.each(elements, (i, v) => {
+            // if radio-button parent is selected ("active")
+            if ($(v).parent().hasClass('active')) {
+                let wire = $(v).data('wire');
+                var color = $(v).data('color');
+
+                // Save the wire color into wires.keys.{first/second...}
+                wires.keys[$(v).data('save')] = color;
+
+                // Remove disabled class from the next wire
+                switch (wire) {
+                    case 1:
+                        $('label[data-wire="2"]').removeClass("disabled");
+                        break;
+                    case 2:
+
+                        $('label[data-wire="3"]').removeClass("disabled");
+                        break;
+                    case 3:
+                        $('label[data-wire="4"]').removeClass("disabled");
+                        break;
+                    case 4:
+                        // Must to know final_digit_odd to solve correct
+                        if (final_digit_odd == null)
+                            // the result will occur only after input has been entered -> modal 'keyup' event
+                            // can be found under "Bomb initializion"
+                            $('#spontaneousFinalDigitCheckModal').modal('show');
+
+                        // final_digit_odd exists
+                        else
+                            $('label[data-wire="5"]').removeClass("disabled");
+                        break;
+                    case 5:
+                        $('label[data-wire="6"]').removeClass("disabled");
+                        break;
+                }
             }
-            wires.first[1] = $(this).data('color');
-
-            if (wires.count > 2)
-                wires_show_result();
-            else
-                wires_hide_result();
         });
-    }*/
-
-    // Wire #1
-    $('body').on('click', 'input[data-id*="wire1-opt"]', function () {
-        wires.keys.first = $(this).data('color');
-        $('label[data-wire="2"]').removeClass("disabled");
-        if (objectCountNotNull(wires.keys) > 2)
-            wires_show_result();
-    });
-
-    // Wire #2
-    $('body').on('click', 'input[data-id*="wire2-opt"]', function () {
-        wires.keys.second = $(this).data('color');
-        $('label[data-wire="3"]').removeClass("disabled");
-        if (objectCountNotNull(wires.keys) > 2)
-            wires_show_result();
-    });
-
-    // Wire #3
-    $('body').on('click', 'input[data-id*="wire3-opt"]', function () {
-        wires.keys.third = $(this).data('color');
-        $('label[data-wire="4"]').removeClass("disabled");
-        if (objectCountNotNull(wires.keys) > 2)
-            wires_show_result();
-    });
-
-    // Wire #4
-    $('body').on('click', 'input[data-id*="wire4-opt"]', function () {
-        wires.keys.forth = $(this).data('color');
-        // Must to know final_digit_odd to solve correct
-        if (bomb.final_digit_odd == null)
-            $('#spontaneousFinalDigitCheckModal').modal('show');
-        // Therefore: the result will occur only after input has been entered -> modal 'keyup' event
-
-        // final_digit_odd exists
-        else {
-            $('label[data-wire="5"]').removeClass("disabled");
-            if (objectCountNotNull(wires.keys) > 2)
-                wires_show_result();
-        }
-    });
-
-    // Wire #5
-    $('body').on('click', 'input[data-id*="wire5-opt"]', function () {
-        wires.keys.fifth = $(this).data('color');
-        $('label[data-wire="6"]').removeClass("disabled");
-        if (objectCountNotNull(wires.keys) > 2)
-            wires_show_result();
-    });
-
-    // Wire #6
-    $('body').on('click', 'input[data-id*="wire6-opt"]', function () {
-        wires.keys.sixth = $(this).data('color');
-        if (objectCountNotNull(wires.keys) > 2)
-            wires_show_result();
-    });
+    }
 
     // Wires reset button
     $('body').on('click', 'button[name="btn-reset-all-wires"]', function () {
         $('label[name="wires-radio-label"]').removeClass("active");
         $('label[data-wire!="1"]').addClass("disabled");
         wires_hide_result();
-        wires.reset();
+        reset(wires.keys);
     });
 
 
-
+    
     /* ---------- The Button ---------- */
 
     function buttonReturnResult(option) {

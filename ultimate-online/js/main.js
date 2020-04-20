@@ -1,18 +1,18 @@
 // Initialize bomb settings
 var bomb = {
-    final_digit: null,
-    final_digit_odd: null,
-    battery_count: null,
+    final_digit: undefined,
+    final_digit_odd: undefined,
+    battery_count: undefined,
 
     /// Complicated Wires settings
-    parallel_port: null,
+    parallel_port: undefined,
 
     /// The Button settings
-    indicator_car: null,
-    indicator_frk: null,
+    indicator_car: undefined,
+    indicator_frk: undefined,
 
     /// Simon Says settings
-    vowel: null,
+    vowel: undefined,
     strikes: 0,
 
     /// Memory settings
@@ -25,18 +25,18 @@ var bomb = {
 let reset = (obj) => {
   Object.keys(obj).map(key => {
     if (obj[key] instanceof Array) obj[key] = []
-    else obj[key] = null
+    else obj[key] = undefined
   })
 }
 
 // --- Wires
 var wires_keys = {
-    first: null,
-    second: null,
-    third: null,
-    fourth: null,
-    fifth: null,
-    sixth: null
+    first: undefined,
+    second: undefined,
+    third: undefined,
+    fourth: undefined,
+    fifth: undefined,
+    sixth: undefined
 }
 
 var wires = {
@@ -45,8 +45,8 @@ var wires = {
 
 // --- The Button
 var button = {
-    color: null,
-    word: null
+    color: undefined,
+    word: undefined
 }
 
 
@@ -82,25 +82,25 @@ $(function () {
                     $('input[data-id="final_serial_digit"]').val(bomb.final_digit);
                 if (bomb.battery_count)
                     $('input[data-id="batteries"]').val(bomb.battery_count);
-                if (bomb.vowel != null) {
+                if (bomb.vowel != undefined) {
                     if (bomb.vowel)
                         $('input[data-id="vowel-opt2"]').parent().addClass('active');
                     else
                         $('input[data-id="vowel-opt1"]').parent().addClass('active');
                 }
-                if (bomb.indicator_car != null) {
+                if (bomb.indicator_car != undefined) {
                     if (bomb.indicator_car)
                         $('input[data-id="indicator-car-opt2"]').parent().addClass('active');
                     else
                         $('input[data-id="indicator-car-opt1"]').parent().addClass('active');
                 }
-                if (bomb.indicator_car != null) {
-                    if (bomb.indicator_car)
+                if (bomb.indicator_car != undefined) {
+                    if (bomb.indicator_frk)
                         $('input[data-id="indicator-frk-opt2"]').parent().addClass('active');
                     else
                         $('input[data-id="indicator-frk-opt1"]').parent().addClass('active');
                 }
-                if (bomb.parallel_port != null) {
+                if (bomb.parallel_port != undefined) {
                     if (bomb.parallel_port)
                         $('input[data-id="parallel-opt2"]').parent().addClass('active');
                     else
@@ -127,10 +127,8 @@ $(function () {
     // final_digit & final_digit_odd
     $('body').on('keyup', 'input[data-id="final_serial_digit"]', function () {
         if ($(this).val() != "") {
-
-            console.log('Value', $(this).val(), 'entered');
-
             bomb.final_digit = $(this).val();
+            
             if (bomb.final_digit % 2 == 0)
                 bomb.final_digit_odd = false;
             else
@@ -151,17 +149,6 @@ $(function () {
         }
     });
 
-    // Input:  radio-button selector
-    // Output: value of the selected radio-button
-    radioCheckedOptionValue = (selector) => {
-        $.each($(selector), (i, v) => {
-            if ($(v).prop('checked')) {
-                console.log($(v).val());
-                return $(v).val();
-            }
-        });
-    }
-
     // vowel
     $('body').on('click', 'input[name="vowel-options"]', function () {
         if ($(this).val() == 'yes')
@@ -173,17 +160,25 @@ $(function () {
     // indicator_car
     $('body').on('click', 'input[name="car-options"]', function () {
         if ($(this).val() == 'yes')
-            bomb.vowel = true;
+            bomb.indicator_car = true;
         else
-            bomb.vowel = false;
+            bomb.indicator_car = false;
     });
 
     // indicator_frk
     $('body').on('click', 'input[name="frk-options"]', function () {
         if ($(this).val() == 'yes')
-            bomb.vowel = true;
+            bomb.indicator_frk = true;
         else
-            bomb.vowel = false;
+            bomb.indicator_frk = false;
+    });
+    
+    // 
+    $('body').on('click', 'input[name="parallel-options"]', function () {
+        if ($(this).val() == 'yes')
+            bomb.parallel_port = true;
+        else
+            bomb.parallel_port = false;
     });
 
 
@@ -206,10 +201,10 @@ $(function () {
         return wires_colors;
     }
 
-    function objectCountNotNull(myObject) {
+    function objectCountOtherThanUndefined(myObject) {
         var counter = 0;
         for (var key in myObject) {
-            if (myObject[key] != null)
+            if (myObject[key] != undefined)
                 counter++;
         }
         return counter;
@@ -259,7 +254,7 @@ $(function () {
 
     function solve_wires() {
 
-        switch (objectCountNotNull(wires.keys)) {
+        switch (objectCountOtherThanUndefined(wires.keys)) {
             case 3:
                 return wires_three();
                 break;
@@ -289,9 +284,6 @@ $(function () {
     // One of the wire's radio-buttons is triggered
     $('body').on('click', 'input[name="options"]', function () {
         wires_triggered(bomb.final_digit_odd);
-        // there are at least 3 wires -> solve & show result
-        if (objectCountNotNull(wires.keys) > 2)
-            wires_show_result();
     });
 
     // 1. Saves the chosen color into wires.keys
@@ -307,7 +299,9 @@ $(function () {
 
                 // Save the wire color into wires.keys.{first/second...}
                 wires.keys[$(v).data('save')] = color;
-
+                
+                var spontaneousCheck = false;
+                
                 // Remove disabled class from the next wire
                 switch (wire) {
                     case 1:
@@ -322,11 +316,12 @@ $(function () {
                         break;
                     case 4:
                         // Must to know final_digit_odd to solve correct
-                        if (final_digit_odd == null)
-                            // the result will occur only after input has been entered -> modal 'keyup' event
-                            // can be found under "Bomb initializion"
+                        if (final_digit_odd == undefined) {
+                            // The result will occur only after input has been entered -> modal 'keyup' event
+                            // Can be found under "Bomb initializion"
                             $('#spontaneousFinalDigitCheckModal').modal('show');
-
+                            spontaneousCheck = true;
+                        }
                         // final_digit_odd exists
                         else
                             $('label[data-wire="5"]').removeClass("disabled");
@@ -335,6 +330,10 @@ $(function () {
                         $('label[data-wire="6"]').removeClass("disabled");
                         break;
                 }
+                
+                // There are at least 3 wires -> solve & show result
+                if (objectCountOtherThanUndefined(wires.keys) > 2 && !spontaneousCheck)
+                    wires_show_result();
             }
         });
     }
@@ -376,13 +375,13 @@ $(function () {
     }
 
     function validateButtonInfo() {
-        if (button.color != null && button.word != null) {
+        if (button.color != undefined && button.word != undefined) {
             // Additional info
-            if (bomb.battery_count == null)
+            if (bomb.battery_count == undefined)
                 // abc;
-                if (bomb.indicator_car == null)
+                if (bomb.indicator_car == undefined)
                     // abc;
-                    if (bomb.indicator_frk == null)
+                    if (bomb.indicator_frk == undefined)
                         // abc;
                         return true;
         }

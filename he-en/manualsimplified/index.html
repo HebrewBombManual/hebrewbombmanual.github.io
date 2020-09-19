@@ -1728,37 +1728,6 @@
                             }
                         </script>
                     </table>
-                    <script>
-                        var container = document.getElementsByClassName("password-options-table")[0];
-                        container.onkeyup = function(e) {
-                            var target = e.srcElement || e.target;
-                            var maxLength = parseInt(target.attributes["maxlength"].value, 10);
-                            var myLength = target.value.length;
-                            if (myLength >= maxLength) {
-                                var next = target;
-                                while (next = next.nextElementSibling) {
-                                    if (next == null)
-                                        break;
-                                    if (next.tagName.toLowerCase() === "input") {
-                                        next.focus();
-                                        break;
-                                    }
-                                }
-                            }
-                            // Move to previous field if empty (user pressed backspace)
-                            else if (myLength === 0) {
-                                var previous = target;
-                                while (previous = previous.previousElementSibling) {
-                                    if (previous == null)
-                                        break;
-                                    if (previous.tagName.toLowerCase() === "input") {
-                                        previous.focus();
-                                        break;
-                                    }
-                                }
-                            }
-                        }
-                    </script>
                     <br />
                     <div dir="ltr">
                         <table class="password-table">
@@ -2079,7 +2048,7 @@
 					<span class="page-header-section-title">ידיות</span>
 				</div>
 				<div class="page-footer absolute-footer">עמוד 20 מתוך 23</div>
-				<div class="page-content">
+				                <div class="page-content">
 					<img src="../assets/img/module-icons/NeedyKnobComponent.svg" class="diagram" />
 					<h2>בנושא הידיות</h2>
 					<p class="flavour-text">מסובך ללא צורך ותלותי ללא סוף. תארו לעצמכם שמומחיות כזו הייתה משמשת לייצור משהו אחר מלבד חידות שטניות.</p>
@@ -2116,12 +2085,12 @@
 					        </tr>
 					        <tr>
 					            <td><center><img src="img/needymodules/knobs/knob-down.png" width="60" /><br>למטה</center></td>
-					            <td><center><img src="img/needymodules/knobs/down-setting.png" width="151" style="min-width: 151px;min-height: 95px;" /></td>
-					            <td><img src="img/needymodules/knobs/light-indicator.png" width="50" /> x3</center></td>
+					            <td><center><img src="img/needymodules/knobs/down-setting.png" width="151" style="min-width: 151px;min-height: 95px;" /></center></td>
+					            <td><center><img src="img/needymodules/knobs/light-indicator.png" width="50" /> x3</center></td>
 					        </tr>
 					        <tr>
 					            <td><center><img src="img/needymodules/knobs/knob-right.png" width="60" /><br>ימין</center></td>
-					            <td colspan="2"><center><img src="img/needymodules/knobs/right-setting.png" width="151" style="min-width: 151px;min-height: 95px;" /></td>
+					            <td colspan="2"><center><img src="img/needymodules/knobs/right-setting.png" width="151" style="min-width: 151px;min-height: 95px;" /></center></td>
 					        </tr>
 					    </tbody>
 					</table>

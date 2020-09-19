@@ -1,0 +1,2249 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7">
+<![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8">
+<![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="description" content="Bomb Defusal Manual for the video game Keep Talking and Nobody Explodes" />
+	<title>מדריך לנטרול פצצות - Keep Talking and Nobody Explodes - he - גרסה 1</title>
+	<meta name="viewport" content="initial-scale=1" />
+    <link type="text/css" href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
+    <link type="text/css" href="https://fonts.googleapis.com/css?family=Noto+Sans+Hebrew&display=swap" rel="stylesheet">
+    <link type="text/css" href="../../assets/css/fonts.css" rel="stylesheet"/>
+    <link type="text/css" href="../assets/css/hebrew-fixes.css" rel="stylesheet"/>
+	<link type="text/css" href="../assets/css/css/normalize.css" rel="stylesheet"/>
+	<link type="text/css" href="css/main.css" rel="stylesheet"/>
+	<link rel="icon" href="../assets/favicon.ico" type="image/png" />
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-48421906-2', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script>
+		window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')
+	</script>
+    <div id='toTop' class='rounded hidden-print mobile-hidden'><img src='../assets/img/functional-icons/arrow-up.svg'></div>
+    <a class="hidden-print mobile-hidden" href="../index.html"><div id='backToMenu' class='rounded'><img src='../assets/img/functional-icons/arrow-right.svg'> חזרה לדף הבית</div></a>
+    <script type="text/javascript" charset="utf-8" src="js/main.js"></script>
+</head>
+<body dir="rtl">
+    <div id="navbar" class="hidden-print mobile-hidden">
+        <a class="rounded navbar-gap" href="#TableOfContents">תוכן עניינים</a>
+        <a class="rounded" href="#Wires">חוטים</a>
+        <a class="rounded" href="#TheButton">הכפתור</a>
+        <a class="rounded" href="#Keypads">לוח מקשים</a>
+        <a class="rounded" href="#SimonSays">הרצל אמר (סיימון)</a>
+        <a class="rounded" href="#WhosOnFirst">שעשועון מילים</a>
+        <a class="rounded" href="#Memory">זיכרון</a>
+        <a class="rounded" href="#MorseCode">קוד מורס</a>
+        <a class="rounded" href="#ComplicatedWires">חוטים מסובכים</a>
+        <a class="rounded" href="#WireSequences">רצפי חוטים</a>
+        <a class="rounded" href="#Mazes">מבוכים</a>
+        <a class="rounded navbar-gap" href="#Passwords">סיסמאות</a>
+        <a class="rounded" href="#VentingGas">גז אוורור</a>
+        <a class="rounded" href="#CapacitorDischarge">פריקת קבלים</a>
+        <a class="rounded navbar-gap" href="#Knobs">ידיות</a>
+        <a class="rounded" href="#AppendixA">נספח א'</a>
+        <a class="rounded" href="#AppendixB">נספח ב'</a>
+        <a class="rounded" href="#AppendixC">נספח ג'</a>
+    </div>
+    
+	<div id="ManualContent">        
+		<div class="section">
+			<div id="TitlePage" class="page section-title page-bg-01">
+				<div class="page-footer absolute-footer" data-args="pageNum=1;pageCount=23"><span class="gamedisclaimer">מדריך לשימוש במשחק וידאו. לפרטים נוספים ניתן לבקר בכתובת www.keeptalkinggame.com</span></div>
+				<div class="page-content">
+					<img src="../assets/img/ktane-logo.png" class="logo" alt="המשיכו לדבר ואף אחד לא יתפוצץ" />
+					<div class="title">
+                          <h1>
+                            <span>מדריך לנטרול פצצות</span>
+                      </h1>
+					</div>
+					<h2 class="website">www.keeptalkinggame.com</h2>
+					<h2 class="versioning">
+						<span>גרסה 1-מופשט (English)</span>
+						<br /><span class="verification-code">קוד אימות: 241</span>
+                        <br /><br /><span style="font-size: 0.5em; font-weight: normal;">גרסה לא רשמית בתרגום לשפה העברית</span>
+					</h2>
+				</div>
+				<div class="page-footer relative-footer" data-args="pageNum=1;pageCount=23"><span class="gamedisclaimer">מדריך לשימוש במשחק וידאו. לפרטים נוספים ניתן לבקר בכתובת www.keeptalkinggame.com</span></div>
+			</div>
+		</div>
+		<div class="section">
+			<div id="TableOfContents" class="page section-title page-bg-02">
+				<div class="page-header">
+					<span class="page-header-doc-title">המשיכו לדבר ואף אחד לא יתפוצץ גרסה 1-מופשט</span>
+					<span class="page-header-section-title">מבוא</span>
+				</div>
+				<div class="page-footer absolute-footer">עמוד 2 מתוך 23</div>
+				<div class="page-content">
+					<div class="intro-vertical-spacer"></div>
+					<div class="intro">
+						<p>ברוכים הבאים לעולם המסוכן והמאתגר של נטרול פצצות.</p>
+						<p>יש לקרוא את המדריך בעיון. <em>אתם המומחים</em>. בעמודים אלה תוכלו למצוא את כל מה שצריך לדעת כדי לנטרל גם את הפצצות המגוחכות ביותר.<br />וזכרו &mdash; פספוס אחד קטן וזה עלול להסתיים!</p><br />
+                        <h1>תוכן עניינים</h1>
+                        <p>כדי לאפשר לחיצה על הקישורים יש לפתוח בדפדפן האינטרנט או בעורך קבצים מתאים</p>
+                        <table align="center" ellspacing="0" cellpadding="0">
+                            <tbody align="right">
+                                <tr>
+                                    <td>
+                                        <h3>מבוא:</h3>
+                                        <ol>
+                                            <li><a href='#DefusingBombs'>נטרול פצצות</a></li>
+                                        </ol>
+                                        <br />
+                                        <h3>מודולים:</h3>
+                                        <ol>
+                                            <li><a href='#Wires'>חוטים</a></li>
+                                            <li><a href='#TheButton'>הכפתור</a></li>
+                                            <li><a href='#Keypads'>מקשים</a></li>
+                                            <li><a href='#SimonSays'>הרצל אמר (סיימון)</a></li>
+                                            <li><a href='#WhosOnFirst'>שעשועון מילים</a></li>
+                                            <li><a href='#Memory'>זיכרון</a></li>
+                                            <li><a href='#MorseCode'>קוד מורס</a></li>
+                                            <li><a href='#ComplicatedWires'>חוטים מסובכים</a></li>
+                                            <li><a href='#WireSequences'>רצפי חוטים</a></li>
+                                            <li><a href='#Mazes'>מבוכים</a></li>
+                                            <li><a href='#Passwords'>סיסמאות</a></li>
+                                        </ol>
+                                        <br />
+                                        <h3>מודולים תלותיים:</h3>
+                                        <ol>
+                                            <li><a href='#VentingGas'>גז אוורור</a></li>
+                                            <li><a href='#CapacitorDischarge'>פריקת קבלים</a></li>
+                                            <li><a href='#Knobs'>ידיות</a></li>
+                                        </ol>
+                                    </td>
+                                    <td>
+                                        <h3>נספח א':</h3>
+                                        <a href='#AppendixA'>זיהוי נורות בקרה</a>
+                                        <h3>נספח ב':</h3>
+                                        <a href='#AppendixB'>זיהוי סוללות</a>
+                                        <h3>נספח ג':</h3>
+                                        <a href='#AppendixC'>זיהוי מחברי יציאה (פורטים)</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+					</div>
+				</div>
+                <div class="page-footer">
+				    <span class="page-footer page-number">עמוד 2 מתוך 23</span>
+                </div>
+			</div>
+			<div id="DefusingBombs" class="page page-bg-03">
+				<div class="page-header">
+					<span class="page-header-doc-title">המשיכו לדבר ואף אחד לא יתפוצץ גרסה 1-מופשט</span>
+					<span class="page-header-section-title">נטרול פצצות</span>
+				</div>
+				<div class="page-footer absolute-footer">עמוד 3 מתוך 23</div>
+				<div class="page-content">
+					<h1>נטרול פצצות</h1>
+					<p>פצצה תתפוצץ כאשר מונה הזמן שלה מגיע ל-0:00 או כאשר נרשמו פסילות רבות מדי. הדרך היחידה לנטרל פצצה היא נטרול כלל המודולים שלה לפני תום הספירה לאחור.</p>
+					<div class="bomb-diagram">
+						<span class="diagram-label">פצצה לדוגמה</span><br />
+						<table>
+							<tr>
+								<td><img src="../assets/img/Bomb.svg" class="bomb-diagram-front" /><br /><span>חזית</span></td>
+								<td><img src="../assets/img/BombSide.svg" class="bomb-diagram-side" /><br /><span>צד</span></td>
+							</tr>
+						</table>
+					</div>
+					<h3>מודולים</h3>
+					<p>כל פצצה תכלול עד 11 מודולים שיש לנטרל. כל מודול הוא נפרד, וניתן לנטרלם בכל סדר.</p>
+					<p>הוראות לנטרול מודולים ניתן למצוא בסעיף 1. מודולים "תלותיים" מציגים מקרה מיוחד ומתוארים בסעיף 2.</p>
+					<h3>פסילות</h3>
+					<div class="timer-diagram"><span>מחוון פסילות</span><br /><img src="../assets/img/module-icons/TimerComponent.svg" /></div>
+					<p>כאשר המנטרל טועה, הפצצה תתעד פסילה לחובתו וזו תוצג על גבי מחוון הפסילות מעל מונה הזמן. פצצות עם מחוון פסילה יתפוצצו לאחר הפסילה השלישית. לאחר כל פסילה שתירשם, יגבר קצב הספירה לאחור.</p>
+					<p>אם אין מחוון פסילות מעל מונה הזמן, הפצצה תתפוצץ עם הפסילה הראשונה כשהיא לא משאירה מקום לטעויות.</p>
+					<h3>איסוף מידע</h3>
+					<p>הוראות מסוימות לנטרול ידרשו מידע ספציפי על הפצצה, כמו המספר הסידורי. מידע מסוג זה ניתן למצוא בדרך כלל בחלקו העליון, התחתון או על גבי אחד מצידיה של הפצצה. ראו נספחים א', ב' ו- ג' לקבלת הוראות זיהוי שיעזרו בנטרול מודולים אלה.</p>
+				</div>
+				<div class="page-footer">
+				    <span class="page-footer page-number page-number-center">עמוד 3 מתוך 23</span>
+                    <span class="page-footer-toc"><a href="#TableOfContents">תוכן עניינים</a></span>
+                </div>
+			</div>
+		</div>
+		<div class="section">
+			<div id="Section1" class="page section-title page-bg-04">
+				<div class="page-header">
+					<span class="page-header-doc-title">המשיכו לדבר ואף אחד לא יתפוצץ גרסה 1-מופשט</span>
+					<span class="page-header-section-title">סעיף 1: מודולים</span>
+				</div>
+				<div class="page-footer absolute-footer">עמוד 4 מתוך 23</div>
+				<div class="page-content">
+					<div class="vertical-spacer"></div>
+					<img src="../assets/img/module-icons/Component.svg" class="diagram" />
+					<div class="new-block-formatting-context">
+						<h1>סעיף 1: מודולים</h1>
+						<p>ניתן לזהות מודולים באמצעות נורית לד בפינה הימנית העליונה. כשנורית הלד מוארת בצבע ירוק, המודול מנוטרל.</p>
+						<p>בכדי לנטרל את הפצצה כולה יש לנטרל את כל המודולים.</p>
+					</div>
+				</div>
+				<div class="page-footer">
+				    <span class="page-footer page-number page-number-center">עמוד 4 מתוך 23</span>
+                    <span class="page-footer-toc"><a href="#TableOfContents">תוכן עניינים</a></span>
+                </div>
+			</div>
+		</div>
+		<div class="section">
+			<div id="Wires" class="page page-bg-05">
+				<div class="page-header">
+					<span class="page-header-doc-title">המשיכו לדבר ואף אחד לא יתפוצץ גרסה 1-מופשט</span>
+					<span class="page-header-section-title">חוטים</span>
+				</div>
+				<div class="page-footer absolute-footer">עמוד 5 מתוך 23</div>
+				<div class="page-content">
+					<img src="../assets/img/module-icons/WireComponent.svg" class="diagram" />
+					<h2>בנושא החוטים</h2>
+					<p class="flavour-text">חוטים הם הדם של האלקטרוניקה! לא, רגע, חשמל הוא הדם. חוטים דומים יותר לורידים? לא משנה&hellip;</p>
+					<ul>
+						<li>למודול החוטים יכולים להיות 3-6 חוטים.</li>
+						<li>כדי לנטרל את המודול צריך לחתוך רק את החוט <em>הנכון</em>.</li>
+						<li>סדר החוטים מתחיל כשהחוט הראשון הוא העליון.</li>
+					</ul>
+					<table width="560px">
+						<tr>
+							<td>
+								<span class="wire-header">3 חוטים:</span>
+								<br /><span>אם (<span class='red'>אדומים</span> = 0): לחתוך חוט שני.</span>
+								<br /><span>אם (<span class='blue'>כחולים</span> > 1) וגם (חוט שלישי &#8800; <span class='white'>לבן</span>): לחתוך חוט <span class='blue'>כחול</span> אחרון.</span>
+								<br /><span>אחרת, לחתוך חוט שלישי.</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="wire-header">4 חוטים:</span>
+								<br /><span><b><i>לשאול</i></b> 'ספרה אחרונה במספר הסידורי אי-זוגית'? 'כמה <span class='red'>אדומים</span>'?</span>
+								<br /><span>אם (<span class='red'>אדומים</span> > 1) וגם (ספרה אחרונה אי-זוגית): לחתוך חוט <span class='red'>אדום</span> אחרון.</span>
+								<br />
+                                <br /><span><b><i>לשאול</i></b> 'צבע חוט רביעי'?</span>
+                                <br /><span>אם (<span class='red'>אדומים</span> = 0) וגם (רביעי = <span class='yellow'>צהוב</span>): לחתוך חוט ראשון.</span>
+								<br />
+                                <br /><span><b><i>לשאול</i></b> 'כמה <span class='blue'>כחולים</span>'?</span>
+                                <br /><span>אם (<span class='blue'>כחולים</span> = 1): לחתוך חוט ראשון.</span>
+								<br />
+                                <br /><span><b><i>לשאול</i></b> 'כמה <span class='yellow'>צהובים</span>'?</span>
+                                <br /><span>אם (<span class='yellow'>צהובים</span> > 1): לחתוך חוט רביעי.</span>
+                                <br />
+                                <br /><span>אחרת, לחתוך חוט שני.</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="wire-header">5 חוטים:</span>
+								<br /><span><b><i>לשאול</i></b> 'ספרה אחרונה במספר הסידורי אי-זוגית'? 'צבע חוט חמישי'?</span>
+								<br /><span>אם (חמישי <span class='black'>שחור</span>) וגם (ספרה אחרונה אי-זוגית): לחתוך חוט רביעי.</span>
+                                <br />
+                                <br /><span><b><i>לשאול</i></b> 'כמה <span class='black'>שחורים</span> / <span class='red'>אדומים</span> / <span class='yellow'>צהובים</span>'?</span>
+								<br /><span>אם (<span class='black'>שחורים</span> = 0) וגם [(<span class='red'>אדומים</span> &#8800; 1) או (<span class='yellow'>צהובים</span> &#60; 2)]: לחתוך חוט שני.</span>
+								<br />
+                                <br /><span>אחרת, לחתוך חוט ראשון.</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span class="wire-header">6 חוטים:</span>
+								<br /><span><b><i>לשאול</i></b> 'ספרה אחרונה במספר הסידורי אי-זוגית'? 'כמה <span class='yellow'>צהובים</span> / <span class='red'>אדומים</span> / <span class='white'>לבנים</span>'?</span>
+								<br /><span>אם (<span class='yellow'>צהובים</span> = 0) וגם (ספרה אחרונה אי-זוגית): לחתוך חוט שלישי.</span>
+								<br /><span>אם (<span class='yellow'>צהובים</span> &#8800; 1) וגם (<span class='red'>אדומים</span> = 0) וגם (<span class='white'>לבנים</span> &#60; 2): לחתוך חוט אחרון.</span>
+								<br />
+                                <br /><span>אחרת, לחתוך חוט רביעי.</span>
+							</td>
+						</tr>
+					</table>
+                    <br>
+				</div>
+				<div class="page-footer">
+				    <span class="page-footer page-number page-number-center">עמוד 5 מתוך 23</span>
+                    <span class="page-footer-toc"><a href="#TableOfContents">תוכן עניינים</a></span>
+                </div>
+			</div>
+		</div>
+		<div class="section">
+			<div id="TheButton" class="page page-bg-06">
+				<div class="page-header">
+					<span class="page-header-doc-title">המשיכו לדבר ואף אחד לא יתפוצץ גרסה 1-מופשט</span>
+					<span class="page-header-section-title">הכפתור</span>
+				</div>
+				<div class="page-footer absolute-footer">עמוד 6 מתוך 23</div>
+				<div class="page-content">
+					<img src="../assets/img/module-icons/ButtonComponent.svg" class="diagram" />
+					<h2>בנושא הכפתור</h2>
+					<p class="flavour-text">ניתן לחשוב שכפתור שמורה לכם ללחוץ עליו הוא די פשוט. זה בדיוק סוג החשיבה שגורם לאנשים להתפוצץ.</p>
+					<p class="appendix-reference"><span>עיינו בנספח א' עבור זיהוי נורות בקרה.</span><br /><span>עיינו בנספח ב' עבור זיהוי סוללות.</span></p>
+					<p>עקבו אחר כללים אלה לפי הסדר בהם רשומים.</p>
+                    <div class="the-button-table-container">
+                        <table class="the-button-table the-button-table-float-right">
+                            <tbody>
+                                <tr>
+                                    <td colspan="2" rowspan="2" class="diagonalRising">
+                                        <div id="diagonal-top">כיתוב</div>
+                                        <div id="diagonal-bottom">צבע</div>
+                                    </td>
+                                    <td rowspan="2">
+                                        <center>
+                                            <div class="the-button-circle" style="background-color:grey;">ABORT</div>
+                                        </center>
+                                    </td>
+                                    <td colspan="2">
+                                        <center>
+                                            <div class="the-button-circle" style="background-color:grey;">DETONATE</div>
+                                        </center>
+                                    </td>
+                                    <td rowspan="2">
+                                        <center>
+                                            <div class="the-button-circle" style="background-color:grey;">HOLD</div>
+                                        </center>
+                                    </td>
+                                    <td rowspan="2">
+                                        <center>
+                                            <div class="the-button-circle" style="background-color:grey;">PRESS</div>
+                                        </center>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>+2 <img src="img/modules/thebutton/battery.png" width="30"></td>
+                                    <td>+2 <img src="img/modules/thebutton/battery-no.png" width="30"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <center>
+                                            <div class="the-button-circle" style="background-color:red;font-size: 14px;">אדום</div>
+                                        </center>
+                                    </td>
+                                    <td class="the-button-option check"><img src="img/modules/thebutton/3batteries-and-frk.png" width="60"></td>
+                                    <td class="the-button-option press"><img src="img/modules/thebutton/left-mouse-click.png" width="60"></td>
+                                    <td class="the-button-option hold"><img src="img/modules/thebutton/hold.svg" width="50"></td>
+                                    <td class="the-button-option press"><img src="img/modules/thebutton/left-mouse-click.png" width="60"></td>
+                                    <td class="the-button-option check"><img src="img/modules/thebutton/3batteries-and-frk.png" width="60"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <center>
+                                            <div class="the-button-circle" style="background-color:blue;font-size: 14px;">כחול</div>
+                                        </center>
+                                    </td>
+                                    <td class="the-button-option hold"><img src="img/modules/thebutton/hold.svg" width="50"></td>
+                                    <td class="the-button-option press"><img src="img/modules/thebutton/left-mouse-click.png" width="60"></td>
+                                    <td class="the-button-option hold"><img src="img/modules/thebutton/hold.svg" width="50"></td>
+                                    <td class="the-button-option check"><img src="img/modules/thebutton/3batteries-and-frk.png" width="60"></td>
+                                    <td class="the-button-option check"><img src="img/modules/thebutton/3batteries-and-frk.png" width="60"></td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">
+                                        <center>
+                                            <div class="the-button-circle" style="color:#000;font-size: 14px;">לבן</div>
+                                        </center>
+                                    </td>
+                                    <td><img src="img/modules/thebutton/indicator-car.png" width="50"></td>
+                                    <td class="the-button-option hold"><img src="img/modules/thebutton/hold.svg" width="50"></td>
+                                    <td class="the-button-option press"><img src="img/modules/thebutton/left-mouse-click.png" width="60"></td>
+                                    <td class="the-button-option hold"><img src="img/modules/thebutton/hold.svg" width="50"></td>
+                                    <td class="the-button-option hold"><img src="img/modules/thebutton/hold.svg" width="50"></td>
+                                    <td class="the-button-option hold"><img src="img/modules/thebutton/hold.svg" width="50"></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/modules/thebutton/indicator-car-no.png" width="50"></td>
+                                    <td class="the-button-option check"><img src="img/modules/thebutton/3batteries-and-frk.png" width="60"></td>
+                                    <td class="the-button-option press"><img src="img/modules/thebutton/left-mouse-click.png" width="60"></td>
+                                    <td class="the-button-option hold"><img src="img/modules/thebutton/hold.svg" width="50"></td>
+                                    <td class="the-button-option check"><img src="img/modules/thebutton/3batteries-and-frk.png" width="60"></td>
+                                    <td class="the-button-option check"><img src="img/modules/thebutton/3batteries-and-frk.png" width="60"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <center>
+                                            <div class="the-button-circle" style="background-color:black;font-size: 14px;">אחר</div>
+                                        </center>
+                                    </td>
+                                    <td class="the-button-option check"><img src="img/modules/thebutton/3batteries-and-frk.png" width="60"></td>
+                                    <td class="the-button-option press"><img src="img/modules/thebutton/left-mouse-click.png" width="60"></td>
+                                    <td class="the-button-option hold"><img src="img/modules/thebutton/hold.svg" width="50"></td>
+                                    <td class="the-button-option check"><img src="img/modules/thebutton/3batteries-and-frk.png" width="60"></td>
+                                    <td class="the-button-option check"><img src="img/modules/thebutton/3batteries-and-frk.png" width="60"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="the-button-table the-button-table-float-left legend">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">מקרא</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="the-button-option hold"><img src="img/modules/thebutton/hold.svg" width="50"></td>
+                                    <td>החזקת כפתור לחוץ</td>
+                                </tr>
+                                <tr>
+                                    <td class="the-button-option check"><img src="img/modules/thebutton/3batteries-and-frk.png" width="60"></td>
+                                    <td>ללחוץ ולשחרר מיד אם יש 3 סוללות ונורת בקרה FRK, אחרת להחזיק את הכפתור לחוץ</td>
+                                </tr>
+                                <tr>
+                                    <td class="the-button-option press"><img src="img/modules/thebutton/left-mouse-click.png" width="60"></td>
+                                    <td>ללחוץ ולשחרר מיד</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--<h3>יש ללחוץ ולשחרר מיד את הכפתור:</h3>
+					<ol>
+                        <b><i>לשאול</i></b> 'כמה סוללות יש'? 'תיאור הכפתור'?
+						<li>אם (סוללות &#8805; 2) וגם (תיאור "DETONATE").</li>
+                        <b><i>לשאול</i></b> 'צבע הכפתור'?
+                        <li>אם (צבע <span class='red'>אדום</span>) וגם (תיאור "HOLD").</li>
+                        <b><i>לשאול</i></b> 'יש נורת בקרה FRK'? <span class='red'>&#42;</span>'יש נורת בקרה CAR'?
+                        <li>אם (סוללות &#8805; 3) וגם (יש נורת בקרה FRK) <span class='red'>&#42;</span>וגם [(צבע &#8800; <span class='white'>לבן</span>) או (אין נורת בקרה CAR)].</li>
+						<p>אם אף אחת מהאפשרויות שלעיל לא חלה, יש ללחוץ על הכפתור ולהתייחס ל"שחרור כפתור מוחזק".</p>
+					</ol>-->
+					<h3>שחרור כפתור מוחזק</h3>
+					<p>אם תחזיקו את הכפתור לחוץ, רצועה צבעונית תאיר בצד ימין של המודול. על סמך צבעה, יש לשחרר את הכפתור בנקודת זמן מסוימת:</p>
+					<ul>
+                        <li><em><span>רצועה <span class='yellow'>צהובה</span>:</span></em> <span>משחררים כאשר במונה הזמן מופיעה הספרה 5 בכל מיקום.</span></li>
+                        <li><em><span>רצועה <span class='blue'>כחולה</span>:</span></em> <span>משחררים כאשר במונה הזמן מופיעה הספרה 4 בכל מיקום.</span></li>						
+						<li><em><span>כל רצועת צבע אחרת:</span></em> <span>משחררים כאשר במונה הזמן מופיעה הספרה 1 בכל מיקום.</span></li>
+					</ul>
+                    <br />
+                    <!--<p><span class='red' style='font-size:1.5em'>&#42;</span>החלק האחרון בתנאי השלישי מתייחס למקרה קצה שלא מתרחש 99.9% מהזמן.<br />
+                    &nbsp;&nbsp;&nbsp;מקרה קצה זה מתייחס למצב בו מתקיימים הכללים #3 ו- #4:
+                    <ul>
+                        <li>#3 = "הכפתור לבן ויש מחוון מואר עם התווית CAR": להחזיק</li>
+                        <li>#4 = "יותר משתי סוללות ויש מחוון מואר עם התווית FRK": ללחוץ ולשחרר מידית</li>
+                    </ul>
+                    &nbsp;&nbsp;&nbsp;במקרה זה התנאי השלישי מופיע קודם, ולכן נדרשים להחזיק את הכפתור.<br />
+                    &nbsp;&nbsp;&nbsp;הסיכוי שיהיו 3+ סוללות, נורת בקרה FRK, צבע כפתור <span class='white'>לבן</span> וגם נורת בקרה CAR קלוש.<br />
+                    &nbsp;&nbsp;&nbsp;בדקו זאת, או שלא תבדקו זאת, על אחריותכם בלבד.
+                    </p>-->
+				</div>
+				<div class="page-footer">
+				    <span class="page-footer page-number page-number-center">עמוד 6 מתוך 23</span>
+                    <span class="page-footer-toc"><a href="#TableOfContents">תוכן עניינים</a></span>
+                </div>
+			</div>
+		</div>
+		<div class="section">
+			<div id="Keypads" class="page page-bg-07">
+				<div class="page-header">
+					<span class="page-header-doc-title">המשיכו לדבר ואף אחד לא יתפוצץ גרסה 1-מופשט</span>
+					<span class="page-header-section-title">לוח מקשים</span>
+				</div>
+				<div class="page-footer absolute-footer">עמוד 7 מתוך 23</div>
+				<div class="page-content">
+					<img src="../assets/img/module-icons/KeypadComponent.svg" class="diagram" />
+					<h2>בנושא לוח המקשים</h2>
+					<p class="flavour-text">אני לא בטוח מה הם הסמלים האלה, אבל אני חושד שהם קשורים לתורת הנסתר.</p>
+					<ul>
+						<li>רק עמודה אחת למטה כוללת את ארבעת הסמלים בלוח המקשים.</li>
+						<li>יש ללחוץ על ארבעת הכפתורים בסדר שבו מופיעים בתוך העמודה בה נמצאים, מלמעלה למטה.</li>
+					</ul>
+					<br /><br />
+					<table class="keypad-table" dir="ltr">
+						<tr>
+							<td class="keypad-table-column" style="background-color:crimson"><img class="keypad-symbol-image" src="../assets/img/modules/keypad/28-balloon.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column" style="background-color:blueviolet"><img class="keypad-symbol-image" src="../assets/img/modules/keypad/16-euro.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column always-first"><img class="keypad-symbol-image" src="../assets/img/modules/keypad/1-copyright.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column always-first" style="background-color:aquamarine"><img class="keypad-symbol-image" src="../assets/img/modules/keypad/11-six.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column" style="background-color:#92d050"><img class="keypad-symbol-image" src="../assets/img/modules/keypad/24-pitchfork.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column always-first" style="background-color:aquamarine"><img class="keypad-symbol-image" src="../assets/img/modules/keypad/11-six.png" /></td>
+						</tr>
+                        <tr class="description">
+                            <td>בלון</td>
+                            <td class="keypad-table-spacer"></td>
+                            <td>אירו</td>
+                            <td class="keypad-table-spacer"></td>
+                            <td>קרדיט</td>
+                            <td class="keypad-table-spacer"></td>
+                            <td>שש</td>
+                            <td class="keypad-table-spacer"></td>
+                            <td>מזלג</td>
+                            <td class="keypad-table-spacer"></td>
+                            <td>שש</td>
+                        </tr>
+						<tr>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="../assets/img/modules/keypad/13-at.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column" style="background-color:crimson"><img class="keypad-symbol-image" src="../assets/img/modules/keypad/28-balloon.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="../assets/img/modules/keypad/8-pumpkin.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column" style="background-color:deepskyblue"><img class="keypad-symbol-image" src="../assets/img/modules/keypad/21-paragraph.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column" style="background-color:cornflowerblue"><img class="keypad-symbol-image" src="../assets/img/modules/keypad/4-smileyface.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column" style="background-color:blueviolet"><img class="keypad-symbol-image" src="../assets/img/modules/keypad/16-euro.png" /></td>
+						</tr>
+                        <tr class="description">
+                            <td>AT</td>
+                            <td class="keypad-table-spacer"></td>
+                            <td>בלון</td>
+                            <td class="keypad-table-spacer"></td>
+                            <td>שפם</td>
+                            <td class="keypad-table-spacer"></td>
+                            <td>פסקה</td>
+                            <td class="keypad-table-spacer"></td>
+                            <td>סמיילי</td>
+                            <td class="keypad-table-spacer"></td>
+                            <td>אירו</td>
+                        </tr>
+						<tr>
+							<td class="keypad-table-column" style="background-color:burlywood"><img class="keypad-symbol-image" src="../assets/img/modules/keypad/30-upsidedowny.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column" style="background-color:darkorange"><img class="keypad-symbol-image" src="../assets/img/modules/keypad/23-leftc.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column" style="background-color:darkgoldenrod"><img class="keypad-symbol-image" src="../assets/img/modules/keypad/26-cursive.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column" style="background-color:fuchsia"><img class="keypad-symbol-image" src="../assets/img/modules/keypad/31-bt.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column" style="background-color:fuchsia"><img class="keypad-symbol-image" src="../assets/img/modules/keypad/31-bt.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="../assets/img/modules/keypad/27-tracks.png" /></td>
+						</tr>
+                        <tr class="description">
+                            <td>גימ"ל</td>
+                            <td class="keypad-table-spacer"></td>
+                            <td>כ"ף</td>
+                            <td class="keypad-table-spacer"></td>
+                            <td>זנב חזיר</td>
+                            <td class="keypad-table-spacer"></td>
+                            <td>BT</td>
+                            <td class="keypad-table-spacer"></td>
+                            <td>BT</td>
+                            <td class="keypad-table-spacer"></td>
+                            <td>אי שוויון</td>
+                        </tr>
+						<tr>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="../assets/img/modules/keypad/12-squigglyn.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column" style="background-color:darkgoldenrod"><img class="keypad-symbol-image" src="../assets/img/modules/keypad/26-cursive.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column" style="background-color:#ff8181"><img class="keypad-symbol-image" src="../assets/img/modules/keypad/5-doublek.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column" style="background-color:deeppink"><img class="keypad-symbol-image" src="../assets/img/modules/keypad/7-squidknife.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="../assets/img/modules/keypad/22-rightc.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="../assets/img/modules/keypad/14-ae.png" /></td>
+						</tr>
+                        <tr class="description">
+                            <td>ברק</td>
+                            <td class="keypad-table-spacer"></td>
+                            <td>זנב חזיר</td>
+                            <td class="keypad-table-spacer"></td>
+                            <td>KK</td>
+                            <td class="keypad-table-spacer"></td>
+                            <td>תמנון</td>
+                            <td class="keypad-table-spacer"></td>
+                            <td>C</td>
+                            <td class="keypad-table-spacer"></td>
+                            <td>AE</td>
+                        </tr>
+						<tr>
+							<td class="keypad-table-column" style="background-color:deeppink"><img class="keypad-symbol-image" src="../assets/img/modules/keypad/7-squidknife.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column" style="background-color:darkgrey"><img class="keypad-symbol-image" src="../assets/img/modules/keypad/3-hollowstar.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="../assets/img/modules/keypad/15-meltedthree.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column" style="background-color:#ff8181"><img class="keypad-symbol-image" src="../assets/img/modules/keypad/5-doublek.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column" style="background-color:deepskyblue"><img class="keypad-symbol-image" src="../assets/img/modules/keypad/21-paragraph.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column" style="background-color:#92d050"><img class="keypad-symbol-image" src="../assets/img/modules/keypad/24-pitchfork.png" /></td>
+						</tr>
+                        <tr class="description">
+                            <td>תמנון</td>
+                            <td class="keypad-table-spacer"></td>
+                            <td>כוכב חלול</td>
+                            <td class="keypad-table-spacer"></td>
+                            <td>R</td>
+                            <td class="keypad-table-spacer"></td>
+                            <td>KK</td>
+                            <td class="keypad-table-spacer"></td>
+                            <td>פסקה</td>
+                            <td class="keypad-table-spacer"></td>
+                            <td>מזלג</td>
+                        </tr>
+						<tr>
+							<td class="keypad-table-column" style="background-color:chocolate"><img class="keypad-symbol-image" src="../assets/img/modules/keypad/9-hookn.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column" style="background-color:chocolate"><img class="keypad-symbol-image" src="../assets/img/modules/keypad/9-hookn.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column" style="background-color:burlywood"><img class="keypad-symbol-image" src="../assets/img/modules/keypad/30-upsidedowny.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column" style="background-color:cornsilk"><img class="keypad-symbol-image" src="../assets/img/modules/keypad/20-questionmark.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="../assets/img/modules/keypad/19-dragon.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column"><img class="keypad-symbol-image" src="../assets/img/modules/keypad/18-nwithhat.png" /></td>
+						</tr>
+                        <tr class="description">
+                            <td>H עם קרס</td>
+                            <td class="keypad-table-spacer"></td>
+                            <td>H עם קרס</td>
+                            <td class="keypad-table-spacer"></td>
+                            <td>גימ"ל</td>
+                            <td class="keypad-table-spacer"></td>
+                            <td>סימן שאלה</td>
+                            <td class="keypad-table-spacer"></td>
+                            <td>שלוש</td>
+                            <td class="keypad-table-spacer"></td>
+                            <td>N הפוכה</td>
+                        </tr>
+						<tr>
+							<td class="keypad-table-column" style="background-color:darkorange"><img class="keypad-symbol-image" src="../assets/img/modules/keypad/23-leftc.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column" style="background-color:cornsilk"><img class="keypad-symbol-image" src="../assets/img/modules/keypad/20-questionmark.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column" style="background-color:darkgrey"><img class="keypad-symbol-image" src="../assets/img/modules/keypad/3-hollowstar.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column" style="background-color:cornflowerblue"><img class="keypad-symbol-image" src="../assets/img/modules/keypad/4-smileyface.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column always-last"><img class="keypad-symbol-image" src="../assets/img/modules/keypad/2-filledstar.png" /></td>
+							<td class="keypad-table-spacer"></td>
+							<td class="keypad-table-column always-last"><img class="keypad-symbol-image" src="../assets/img/modules/keypad/6-omega.png" /></td>
+						</tr>
+                        <tr class="description">
+                            <td>כ"ף</td>
+                            <td class="keypad-table-spacer"></td>
+                            <td>סימן שאלה</td>
+                            <td class="keypad-table-spacer"></td>
+                            <td>כוכב חלול</td>
+                            <td class="keypad-table-spacer"></td>
+                            <td>סמיילי</td>
+                            <td class="keypad-table-spacer"></td>
+                            <td>כוכב מלא</td>
+                            <td class="keypad-table-spacer"></td>
+                            <td>אומגה</td>
+                        </tr>
+					</table>
+				</div>
+				<div class="page-footer">
+				    <span class="page-footer page-number page-number-center">עמוד 7 מתוך 23</span>
+                    <span class="page-footer-toc"><a href="#TableOfContents">תוכן עניינים</a></span>
+                </div>
+			</div>
+		</div>
+		<div class="section">
+			<div id="SimonSays" class="page page-bg-01">
+				<div class="page-header">
+					<span class="page-header-doc-title">המשיכו לדבר ואף אחד לא יתפוצץ גרסה 1-מופשט</span>
+					<span class="page-header-section-title">הרצל אמר (סיימון)</span>
+				</div>
+				<div class="page-footer absolute-footer">עמוד 8 מתוך 23</div>
+				<div class="page-content">
+					<img src="../assets/img/module-icons/SimonComponent.svg" class="diagram" />
+					<h2>בנושא הרצל אמר</h2>
+					<p class="flavour-text">בדיוק כמו אחד הצעצועים האלה ששיחקתם איתם כילדים, שם צריך לעקוב אחר הדפוס המופיע, פרט לעובדה שמדובר בחיקוי זול שנרכש ככל הנראה בחנות 'הכל בדולר'.</p>
+					<ol>
+						<li>אחד מארבעת הכפתורים הצבעוניים יהבהב.</li>
+						<li>באמצעות הטבלה הנכונה למטה, יש ללחוץ על הכפתור עם הצבע המתאים.</li>
+						<li>הכפתור המקורי יהבהב, ואחריו אחר. יש לחזור על רצף זה לפי הסדר באמצעות מיפוי הצבעים.</li>
+						<li>הרצף יוארך באחד בכל פעם שתזינו את הרצף הנכון, עד לנטרול המודול.</li>
+					</ol>
+					<table class="simon-says-table">
+					    <tbody>
+					        <tr>
+					            <td><img src="img/modules/simonsays/light-press.png" width="210" alt="הבהוב ולחיצה בפועל"></td>
+					            <td><img src="img/modules/simonsays/vowel.png" width="200" alt="אות ניקוד"></td>
+					            <td><img src="img/modules/simonsays/vowel-no.png" width="200" alt="ללא אות ניקוד"></td>
+					        </tr>
+					        <tr>
+					            <td><center><img src="img/modules/simonsays/strikes-no.png" width="150" alt="ללא פסילות"></center></td>
+					            <td><center><img src="img/modules/simonsays/vowel-strikes-no.png" width="150" alt="דיאגרמה לאות ניקוד וללא פסילות"></center></td>
+					            <td><center><img src="img/modules/simonsays/vowel-no-strikes-no.png" width="150" alt="דיאגרמה ללא אות ניקוד וללא פסילות"></center></td>
+					        </tr>
+					        <tr>
+					            <td><center><img src="img/modules/simonsays/strikes-1.png" width="150" alt="1 פסילה"></center></td>
+					            <td><center><img src="img/modules/simonsays/vowel-strikes-1.png" width="150" alt="דיאגרמה לאות ניקוד ופסילה אחת"></center></td>
+					            <td><center><img src="img/modules/simonsays/vowel-no-strikes-1.png" width="150" alt="דיאגרמה ללא אות ניקוד ופסילה אחת"></center></td>
+					        </tr>
+					        <tr>
+					            <td><center><img src="img/modules/simonsays/strikes-2.png" width="150" alt="2 פסילות"></center></td>
+					            <td><center><img src="img/modules/simonsays/vowel-strikes-2.png" width="150" alt="דיאגרמה לאות ניקוד ושתי פסילות"></center></td>
+					            <td><center><img src="img/modules/simonsays/vowel-no-strikes-2.png" width="150" alt="דיאגרמה ללא אות ניקוד ושתי פסילות"></center></td>
+					        </tr>
+					    </tbody>
+					</table>
+				</div>
+				<div class="page-footer">
+				    <span class="page-footer page-number page-number-center">עמוד 8 מתוך 23</span>
+                    <span class="page-footer-toc"><a href="#TableOfContents">תוכן עניינים</a></span>
+                </div>
+			</div>
+		</div>
+		<div class="section">
+			<div id="WhosOnFirst" class="page page-bg-02">
+				<div class="page-header">
+					<span class="page-header-doc-title">המשיכו לדבר ואף אחד לא יתפוצץ גרסה 1-מופשט</span>
+					<span class="page-header-section-title">שעשועון מילים</span>
+				</div>
+				<div class="page-footer absolute-footer">עמוד 9 מתוך 23</div>
+				<div class="page-content">
+					<img src="../assets/img/module-icons/WhosOnFirstComponent.svg" class="diagram" />
+					<h2>בנושא שעשועון המילים</h2>
+					<p class="flavour-text">המתקן הזה הוא כמו משהו שנלקח ממערכון, מה שעשוי היה להיות מצחיק אם לא היה מחובר לפצצה. מילים רק יסבכו אתכם עוד יותר, אז זה יהיה תמציתי.</p>
+					<ol>
+						<li>יש לקרוא את המילה על גבי הצג ולהשתמש בשלב 1 כדי לקבוע איזה תיאור כפתור נדרש <em>להקריא</em>.</li>
+						<li>באמצעות תיאור הכפתור הזה, יש להשתמש בשלב 2 כדי לקבוע על איזה כפתור <em>ללחוץ</em>.</li>
+						<li>יש לחזור על הפעולה עד לנטרול המודול.</li>
+					</ol>
+					<h3>שלב 1:</h3>
+					<p>בהתבסס על הצג, יש <em>להקריא</em> את התיאור של כפתור מסוים ולהמשיך לשלב 2:</p>
+                    <div class="whos-on-first-step1-container">
+                        <table class="whos-on-first-step1-float-right">
+                            <tbody>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td class='blue'>שמאל ←</td>
+                                    <td class='green'>למטה ↓</td>
+                                </tr>
+                                <tr>
+                                    <td>BLANK</td>
+                                    <td class='red'>ימין →</td>
+                                    <td class='white'>אמצע ↔</td>
+                                </tr>
+                                <tr>
+                                    <td>C</td>
+                                    <td class='red'>ימין →</td>
+                                    <td class='yellow'>למעלה ↑</td>
+                                </tr>
+                                <tr>
+                                    <td>CEE</td>
+                                    <td class='red'>ימין →</td>
+                                    <td class='green'>למטה ↓</td>
+                                </tr>
+                                <tr>
+                                    <td>DISPLAY</td>
+                                    <td class='red'>ימין →</td>
+                                    <td class='green'>למטה ↓</td>
+                                </tr>
+                                <tr>
+                                    <td>FIRST</td>
+                                    <td class='red'>ימין →</td>
+                                    <td class='yellow'>למעלה ↑</td>
+                                </tr>
+                                <tr>
+                                    <td>HOLD ON</td>
+                                    <td class='red'>ימין →</td>
+                                    <td class='green'>למטה ↓</td>
+                                </tr>
+                                <tr>
+                                    <td>LEAD</td>
+                                    <td class='red'>ימין →</td>
+                                    <td class='green'>למטה ↓</td>
+                                </tr>
+                                <tr>
+                                    <td>LED</td>
+                                    <td class='blue'>שמאל ←</td>
+                                    <td class='white'>אמצע ↔</td>
+                                </tr>
+                                <tr>
+                                    <td>LEED</td>
+                                    <td class='blue'>שמאל ←</td>
+                                    <td class='green'>למטה ↓</td>
+                                </tr>
+                                <tr>
+                                    <td>NO</td>
+                                    <td class='red'>ימין →</td>
+                                    <td class='green'>למטה ↓</td>
+                                </tr>
+                                <tr>
+                                    <td>NOTHING</td>
+                                    <td class='blue'>שמאל ←</td>
+                                    <td class='white'>אמצע ↔</td>
+                                </tr>
+                                <tr>
+                                    <td>OKAY</td>
+                                    <td class='red'>ימין →</td>
+                                    <td class='yellow'>למעלה ↑</td>
+                                </tr>
+                                <tr>
+                                    <td>READ</td>
+                                    <td class='red'>ימין →</td>
+                                    <td class='white'>אמצע ↔</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="whos-on-first-step1-float-left">
+                            <tbody>
+                                <tr>
+                                    <td>RED</td>
+                                    <td class='red'>ימין →</td>
+                                    <td class='white'>אמצע ↔</td>
+                                </tr>
+                                <tr>
+                                    <td>REED</td>
+                                    <td class='blue'>שמאל ←</td>
+                                    <td class='green'>למטה ↓</td>
+                                </tr>
+                                <tr>
+                                    <td>SAYS</td>
+                                    <td class='red'>ימין →</td>
+                                    <td class='green'>למטה ↓</td>
+                                </tr>
+                                <tr>
+                                    <td>SEE</td>
+                                    <td class='red'>ימין →</td>
+                                    <td class='green'>למטה ↓</td>
+                                </tr>
+                                <tr>
+                                    <td>THEIR</td>
+                                    <td class='red'>ימין →</td>
+                                    <td class='white'>אמצע ↔</td>
+                                </tr>
+                                <tr>
+                                    <td>THERE</td>
+                                    <td class='red'>ימין →</td>
+                                    <td class='green'>למטה ↓</td>
+                                </tr>
+                                <tr>
+                                    <td>THEY ARE</td>
+                                    <td class='blue'>שמאל ←</td>
+                                    <td class='white'>אמצע ↔</td>
+                                </tr>
+                                <tr>
+                                    <td>THEY'RE</td>
+                                    <td class='blue'>שמאל ←</td>
+                                    <td class='green'>למטה ↓</td>
+                                </tr>
+                                <tr>
+                                    <td>UR</td>
+                                    <td class='blue'>שמאל ←</td>
+                                    <td class='yellow'>למעלה ↑</td>
+                                </tr>
+                                <tr>
+                                    <td>YES</td>
+                                    <td class='blue'>שמאל ←</td>
+                                    <td class='white'>אמצע ↔</td>
+                                </tr>
+                                <tr>
+                                    <td>YOU</td>
+                                    <td class='red'>ימין →</td>
+                                    <td class='white'>אמצע ↔</td>
+                                </tr>
+                                <tr>
+                                    <td>YOU ARE</td>
+                                    <td class='red'>ימין →</td>
+                                    <td class='green'>למטה ↓</td>
+                                </tr>
+                                <tr>
+                                    <td>YOU'RE</td>
+                                    <td class='red'>ימין →</td>
+                                    <td class='white'>אמצע ↔</td>
+                                </tr>
+                                <tr>
+                                    <td>YOUR</td>
+                                    <td class='red'>ימין →</td>
+                                    <td class='white'>אמצע ↔</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+				</div>
+				<div class="page-footer">
+				    <span class="page-footer page-number page-number-center">עמוד 9 מתוך 23</span>
+                    <span class="page-footer-toc"><a href="#TableOfContents">תוכן עניינים</a></span>
+                </div>
+			</div>
+			<div class="page page-bg-03">
+				<div class="page-header">
+					<span class="page-header-doc-title">המשיכו לדבר ואף אחד לא יתפוצץ גרסה 1-מופשט</span>
+					<span class="page-header-section-title">שעשועון מילים</span>
+				</div>
+				<div class="page-footer absolute-footer">עמוד 10 מתוך 23</div>
+				<div class="page-content">
+					<h3>שלב 2:</h3>
+					<p>באמצעות התיאור משלב 1, יש <em>ללחוץ על הכפתור הראשון</em> שמופיע ברשימה המתאימה לו:</p>
+					<table class='whos-on-first-step2-table' dir='ltr'>
+					    <tr>
+					        <th>"BLANK":</th>
+					        <td>WAIT, RIGHT, OKAY, MIDDLE, BLANK</td>
+
+					    </tr>
+					    <tr>
+					        <th>"DONE":</th>
+					        <td>SURE, UH HUH, NEXT, WHAT?, YOUR, UR, YOU'RE, HOLD, LIKE, YOU, U, YOU ARE, UH UH, DONE</td>
+
+					    </tr>
+					    <tr>
+					        <th>"FIRST":</th>
+					        <td>LEFT, OKAY, YES, MIDDLE, NO, RIGHT, NOTHING, UHHH, WAIT, READY, BLANK, WHAT, PRESS, FIRST</td>
+
+					    </tr>
+					    <tr>
+					        <th>"HOLD":</th>
+					        <td>YOU ARE, U, DONE, UH UH, YOU, UR, SURE, WHAT?, YOU'RE, NEXT, HOLD</td>
+
+					    </tr>
+					    <tr>
+					        <th>"LEFT":</th>
+					        <td>RIGHT, LEFT</td>
+
+					    </tr>
+					    <tr>
+					        <th>"LIKE":</th>
+					        <td>YOU'RE, NEXT, U, UR, HOLD, DONE, UH UH, WHAT?, UH HUH, YOU, LIKE</td>
+
+					    </tr>
+					    <tr>
+					        <th>"MIDDLE":</th>
+					        <td>BLANK, READY, OKAY, WHAT, NOTHING, PRESS, NO, WAIT, LEFT, MIDDLE</td>
+
+					    </tr>
+					    <tr>
+					        <th>"NEXT":</th>
+					        <td>WHAT?, UH HUH, UH UH, YOUR, HOLD, SURE, NEXT</td>
+
+					    </tr>
+					    <tr>
+					        <th>"NO":</th>
+					        <td>BLANK, UHHH, WAIT, FIRST, WHAT, READY, RIGHT, YES, NOTHING, LEFT, PRESS, OKAY, NO</td>
+
+					    </tr>
+					    <tr>
+					        <th>"NOTHING":</th>
+					        <td>UHHH, RIGHT, OKAY, MIDDLE, YES, BLANK, NO, PRESS, LEFT, WHAT, WAIT, FIRST, NOTHING</td>
+
+					    </tr>
+					    <tr>
+					        <th>"OKAY":</th>
+					        <td>MIDDLE, NO, FIRST, YES, UHHH, NOTHING, WAIT, OKAY</td>
+
+					    </tr>
+					    <tr>
+					        <th>"PRESS":</th>
+					        <td>RIGHT, MIDDLE, YES, READY, PRESS</td>
+
+					    </tr>
+					    <tr>
+					        <th>"READY":</th>
+					        <td>YES, OKAY, WHAT, MIDDLE, LEFT, PRESS, RIGHT, BLANK, READY</td>
+
+					    </tr>
+					    <tr>
+					        <th>"RIGHT":</th>
+					        <td>YES, NOTHING, READY, PRESS, NO, WAIT, WHAT, RIGHT</td>
+
+					    </tr>
+					    <tr>
+					        <th>"SURE":</th>
+					        <td>YOU ARE, DONE, LIKE, YOU'RE, YOU, HOLD, UH HUH, UR, SURE</td>
+
+					    </tr>
+					    <tr>
+					        <th>"U":</th>
+					        <td>UH HUH, SURE, NEXT, WHAT?, YOU'RE, UR, UH UH, DONE, U</td>
+
+					    </tr>
+					    <tr>
+					        <th>"UHHH":</th>
+					        <td>READY, NOTHING, LEFT, WHAT, OKAY, YES, RIGHT, NO, PRESS, BLANK, UHHH</td>
+
+					    </tr>
+					    <tr>
+					        <th>"UH HUH":</th>
+					        <td>UH HUH</td>
+
+					    </tr>
+					    <tr>
+					        <th>"UH UH":</th>
+					        <td>UR, U, YOU ARE, YOU'RE, NEXT, UH UH</td>
+
+					    </tr>
+					    <tr>
+					        <th>"UR":</th>
+					        <td>DONE, U, UR</td>
+
+					    </tr>
+					    <tr>
+					        <th>"WAIT":</th>
+					        <td>UHHH, NO, BLANK, OKAY, YES, LEFT, FIRST, PRESS, WHAT, WAIT</td>
+
+					    </tr>
+					    <tr>
+					        <th>"WHAT":</th>
+					        <td>UHHH, WHAT</td>
+
+					    </tr>
+					    <tr>
+					        <th>"WHAT?":</th>
+					        <td>YOU, HOLD, YOU'RE, YOUR, U, DONE, UH UH, LIKE, YOU ARE, UH HUH, UR, NEXT, WHAT?</td>
+
+					    </tr>
+					    <tr>
+					        <th>"YES":</th>
+					        <td>OKAY, RIGHT, UHHH, MIDDLE, FIRST, WHAT, PRESS, READY, NOTHING, YES</td>
+
+					    </tr>
+					    <tr>
+					        <th>"YOU":</th>
+					        <td>SURE, YOU ARE, YOUR, YOU'RE, NEXT, UH HUH, UR, HOLD, WHAT?, YOU</td>
+
+					    </tr>
+					    <tr>
+					        <th>"YOUR":</th>
+					        <td>UH UH, YOU ARE, UH HUH, YOUR</td>
+
+					    </tr>
+					    <tr>
+					        <th>"YOU'RE":</th>
+					        <td>YOU, YOU'RE</td>
+
+					    </tr>
+					    <tr>
+					        <th>"YOU ARE":</th>
+					        <td>YOUR, NEXT, LIKE, UH HUH, WHAT?, DONE, UH UH, HOLD, YOU, U, YOU'RE, SURE, UR, YOU ARE</td>
+					    </tr>
+					</table>
+				</div>
+				<div class="page-footer">
+				    <span class="page-footer page-number page-number-center">עמוד 10 מתוך 23</span>
+                    <span class="page-footer-toc"><a href="#TableOfContents">תוכן עניינים</a></span>
+                </div>
+			</div>
+		</div>
+		<div class="section">
+			<div id="Memory" class="page page-bg-04">
+				<div class="page-header">
+					<span class="page-header-doc-title">המשיכו לדבר ואף אחד לא יתפוצץ גרסה 1-מופשט</span>
+					<span class="page-header-section-title">זיכרון</span>
+				</div>
+				<div class="page-footer absolute-footer">עמוד 11 מתוך 23</div>
+				<div class="page-content">
+					<img src="../assets/img/module-icons/MemoryComponent.svg" class="diagram" />
+					<h2>בנושא הזיכרון</h2>
+					<p class="flavour-text">זיכרון הוא דבר רגיש, אך כך גם כל דבר אחר כשמדובר פצצה, אז שימו לב!</p>
+					<ul>
+						<li>יש ללחוץ על הכפתור הנכון כדי שהמודול ימשיך אל השלב הבא. כדי לנטרל את המודול יש להשלים את כל השלבים.</li>
+						<li>לחיצה על כפתור שגוי תאפס את המודול בחזרה לשלב 1.</li>
+						<li>מיקומי הכפתור מסודרים משמאל לימין.</li>
+					</ul>
+					<div class='memory-rules'>
+					    <h4>שלב 1:</h4>
+					    <ul>
+					        <li>המספר על הצג הוא 1 - מיקום שני</li>
+					        <li>המספר על הצג הוא 2 - מיקום שני</li>
+					        <li>המספר על הצג הוא 3 - מיקום שלישי</li>
+					        <li>המספר על הצג הוא 4 - מיקום רביעי</li>
+					    </ul>
+
+					    <h4>שלב 2:</h4>
+					    <ul>
+					        <li>המספר על הצג הוא 1 - כפתור שספרתו '4'</li>
+					        <li>המספר על הצג הוא 2 - מיקום זהה ל<u>שלב 1</u></li>
+					        <li>המספר על הצג הוא 3 - מיקום ראשון</li>
+					        <li>המספר על הצג הוא 4 - מיקום זהה ל<u>שלב 1</u></li>
+					    </ul>
+
+					    <h4>שלב 3:</h4>
+					    <ul>
+					        <li>המספר על הצג הוא 1 - כפתור שספרתו זהה לספרה ב<u>שלב 2</u></li>
+					        <li>המספר על הצג הוא 2 - כפתור שספרתו זהה לספרה ב<u>שלב 1</u></li>
+					        <li>המספר על הצג הוא 3 - מיקום שלישי</li>
+					        <li>המספר על הצג הוא 4 - כפתור שספרתו '4'</li>
+					    </ul>
+
+					    <h4>שלב 4:</h4>
+					    <ul>
+					        <li>המספר על הצג הוא 1 - מיקום זהה ל<u>שלב 1</u></li>
+					        <li>המספר על הצג הוא 2 - מיקום ראשון</li>
+					        <li>המספר על הצג הוא 3 - מיקום זהה ל<u>שלב 2</u></li>
+					        <li>המספר על הצג הוא 4 - מיקום זהה ל<u>שלב 2</u></li>
+					    </ul>
+
+					    <h4>שלב 5:</h4>
+					    <ul>
+					        <li>המספר על הצג הוא 1 - כפתור שספרתו זהה לספרה ב<u>שלב 1</u></li>
+					        <li>המספר על הצג הוא 2 - כפתור שספרתו זהה לספרה ב<u>שלב 2</u></li>
+					        <li>המספר על הצג הוא 3 - כפתור שספרתו זהה לספרה ב<u>שלב 4</u></li>
+					        <li>המספר על הצג הוא 4 - כפתור שספרתו זהה לספרה ב<u>שלב 3</u></li>
+					    </ul>
+					</div>
+				</div>
+				<div class="page-footer">
+				    <span class="page-footer page-number page-number-center">עמוד 11 מתוך 23</span>
+                    <span class="page-footer-toc"><a href="#TableOfContents">תוכן עניינים</a></span>
+                </div>
+			</div>
+		</div>
+		<div class="section">
+			<div id="MorseCode" class="page morse-code page-bg-05">
+				<div class="page-header">
+					<span class="page-header-doc-title">המשיכו לדבר ואף אחד לא יתפוצץ גרסה 1-מופשט</span>
+					<span class="page-header-section-title">קוד מורס</span>
+				</div>
+				<div class="page-footer absolute-footer">עמוד 12 מתוך 23</div>
+				<div class="page-content">
+					<img src="../assets/img/module-icons/MorseCodeComponent.svg" class="diagram" />
+					<h2>בנושא קוד המורס</h2>
+					<p class="flavour-text">שיטת תקשורת ימית ארכאית? מה עוד? לפחות זה קוד מורס אמיתי, אז שימו לב ואולי תוכלו ללמוד משהו.</p>
+					<ul>
+						<li>יש לפרש את האות מהאור המהבהב באמצעות תרשים קוד מורס כדי לאיית אחת מהמילים בטבלה.</li>
+						<li>האות יחזור על עצמו במעגלים, עם מרווח ארוך בין חזרות.</li>
+						<li>לאחר זיהוי המילה, קבעו את התדר המתאים ולחצו על כפתור השידור (TX).</li>
+					</ul>
+                    <center><img src="img/modules/morsecode/MorseCodeTree.png" height="700"/></center>
+				</div>
+				<div class="page-footer">
+				    <span class="page-footer page-number page-number-center">עמוד 12 מתוך 23</span>
+                    <span class="page-footer-toc"><a href="#TableOfContents">תוכן עניינים</a></span>
+                </div>
+			</div>
+		</div>
+		<div class="section">
+			<div id="ComplicatedWires" class="page venn-wires page-bg-06">
+				<div class="page-header">
+					<span class="page-header-doc-title">המשיכו לדבר ואף אחד לא יתפוצץ גרסה 1-מופשט</span>
+					<span class="page-header-section-title">חוטים מסובכים</span>
+				</div>
+				<div class="page-footer absolute-footer">עמוד 13 מתוך 23</div>
+				<div class="page-content">
+					<img src="../assets/img/module-icons/VennWireComponent.svg" class="diagram" />
+					<h2>בנושא החוטים המסובכים</h2>
+					<p class="flavour-text">חוטים אלה אינם כמו האחרים. לחלקם יש פסים! זה הופך אותם לשונים לחלוטין. החדשות הטובות הן שמצאנו קבוצה תמציתית של הוראות מה לעשות בנדון! אולי תמציתי מדי&hellip;</p>
+					<ul>
+						<li>התבוננו בכל חוט: יש נורית לד מעל החוט, ומתחתיו מקום לסמל "&#9733;".</li>
+						<li>עבור <b>כל שילוב</b> של חוט, נורית לד וסמל - השתמשו בדיאגרמת ון שלהלן כדי להחליט אם לחתוך את החוט או לא.</li>
+						<li>כל חוט עשוי להיות מורכב מפסים במספר צבעים.</li>
+					</ul>
+                    <div class="venn-wires-container">
+                        <table class='venn-wires venn-wires-float-right'>
+                            <tr>
+                                <td rowspan="6" style="width:40px;color:#fff;background-color:#fa4252">אדום</td>
+                            </tr>
+                            <tr>
+                                <td>לד + &#9733;</td>
+                                <td rowspan="2">סוללות &#8805; 2?</td>
+                                <td>כן</td>
+                                <td class='venn-cut'>לחתוך</td>
+                            </tr>
+                            <tr>
+                                <td>לד</td>
+                                <td>לא</td>
+                                <td class='venn-dont-cut'>לא לחתוך</td>
+                            </tr>
+                            <tr>
+                                <td>&#9733;</td>
+                                <td></td>
+                                <td></td>
+                                <td class='venn-cut'>לחתוך</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">ללא</td>
+                                <td rowspan="2"># אחרונה זוגית?</td>
+                                <td>כן</td>
+                                <td class='venn-cut'>לחתוך</td>
+                            </tr>
+                            <tr>
+                                <td>לא</td>
+                                <td class='venn-dont-cut'>לא לחתוך</td>
+                            </tr>
+                        </table>
+                        <table class='venn-wires venn-wires-float-left'>
+                            <tr>
+                                <td rowspan="6" style="width:40px;color:#fff;background-color:#4250fa">כחול</td>
+                            </tr>
+                            <tr>
+                                <td>לד + &#9733;</td>
+                                <td rowspan="2">מחבר מקבילי?</td>
+                                <td>כן</td>
+                                <td class='venn-cut'>לחתוך</td>
+                            </tr>
+                            <tr>
+                                <td>לד</td>
+                                <td>לא</td>
+                                <td class='venn-dont-cut'>לא לחתוך</td>
+                            </tr>
+                            <tr>
+                                <td>&#9733;</td>
+                                <td></td>
+                                <td></td>
+                                <td class='venn-dont-cut'>לא לחתוך</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">ללא</td>
+                                <td rowspan="2"># אחרונה זוגית?</td>
+                                <td>כן</td>
+                                <td class='venn-cut'>לחתוך</td>
+                            </tr>
+                            <tr>
+                                <td>לא</td>
+                                <td class='venn-dont-cut'>לא לחתוך</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <br />
+                    <div class="venn-wires-container">
+                        <table class='venn-wires venn-wires-float-right'>
+                            <tr>
+                                <td rowspan="8" style="width:40px;color:#fff;background-color:#b842fa">אדום<br />וכחול</td>
+                            </tr>
+                            <tr>
+                                <td>לד + &#9733;</td>
+                                <td></td>
+                                <td></td>
+                                <td class='venn-dont-cut'>לא לחתוך</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">לד</td>
+                                <td rowspan="2"># אחרונה זוגית?</td>
+                                <td>כן</td>
+                                <td class='venn-cut'>לחתוך</td>
+                            </tr>
+                            <tr>
+                                <td>לא</td>
+                                <td class='venn-dont-cut'>לא לחתוך</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">&#9733;</td>
+                                <td rowspan="2">מחבר מקבילי?</td>
+                                <td>כן</td>
+                                <td class='venn-cut'>לחתוך</td>
+                            </tr>
+                            <tr>
+                                <td>לא</td>
+                                <td class='venn-dont-cut'>לא לחתוך</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">ללא</td>
+                                <td rowspan="2"># אחרונה זוגית?</td>
+                                <td>כן</td>
+                                <td class='venn-cut'>לחתוך</td>
+                            </tr>
+                            <tr>
+                                <td>לא</td>
+                                <td class='venn-dont-cut'>לא לחתוך</td>
+                            </tr>
+                        </table>
+                        <table class='venn-wires venn-wires-float-left'>
+                            <tr>
+                                <td rowspan="6" style="width:40px;">לבן</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">לד + &#9733;</td>
+                                <td rowspan="2">סוללות &#8805; 2?</td>
+                                <td>כן</td>
+                                <td class='venn-cut'>לחתוך</td>
+                            </tr>
+                            <tr>
+                                <td>לא</td>
+                                <td class='venn-dont-cut'>לא לחתוך</td>
+                            </tr>
+                            <tr>
+                                <td>לד</td>
+                                <td></td>
+                                <td></td>
+                                <td class='venn-dont-cut'>לא לחתוך</td>
+                            </tr>
+                            <tr>
+                                <td>&#9733;</td>
+                                <td></td>
+                                <td></td>
+                                <td class='venn-cut'>לחתוך</td>
+                            </tr>
+                            <tr>
+                                <td>ללא</td>
+                                <td></td>
+                                <td></td>
+                                <td class='venn-cut'>לחתוך</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <br />
+                    <p><b>הערה:</b> כשחוט לבן מעורב עם צבעים נוספים - אינו רלוונטי.<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;כלומר: <span class='white'>חוט לבן</span> + <span class='blue'>חוט כחול</span> = <span class='blue'>חוט כחול</span>, <span class='white'>חוט לבן</span> + <span class='red'>חוט אדום</span> = <span class='red'>חוט אדום</span>.</p>
+                    <br />
+					<p class="appendix-reference"><span>עיינו בנספח ב' עבור זיהוי סוללות.</span><br /><span>עיינו בנספח ג' עבור זיהוי מחברי יציאה.</span></p>
+				</div>
+				<div class="page-footer">
+				    <span class="page-footer page-number page-number-center">עמוד 13 מתוך 23</span>
+                    <span class="page-footer-toc"><a href="#TableOfContents">תוכן עניינים</a></span>
+                </div>
+			</div>
+		</div>
+		<div class="section">
+			<div id="WireSequences" class="page wire-sequence page-bg-07">
+				<div class="page-header">
+					<span class="page-header-doc-title">המשיכו לדבר ואף אחד לא יתפוצץ גרסה 1-מופשט</span>
+					<span class="page-header-section-title">רצפי חוטים</span>
+				</div>
+				<div class="page-footer absolute-footer">עמוד 14 מתוך 23</div>
+				<div class="page-content">
+					<img src="../assets/img/module-icons/WireSequenceComponent.svg" class="diagram" />
+					<h2>בנושא רצפי החוטים</h2>
+					<p class="flavour-text">קשה לומר כיצד המנגנון הזה עובד. ההנדסה בהחלט מרשימה למדי, אבל בודאות הייתה דרך קלה יותר לנהל תשעה חוטים.</p>
+					<ul>
+						<li>בתוך מודול זה ישנם מספר לוחות עם חוטים עליהם, אך רק לוח אחד גלוי בכל פעם. ניתן לעבור ללוח הבא באמצעות הכפתור למטה וללוח הקודם באמצעות הכפתור למעלה.</li>
+						<li>אין לעבור ללוח הבא עד שאתם בטוחים שחתכתם את כל החוטים הדרושים בלוח הנוכחי.</li>
+						<li>יש לחתוך את החוטים לפי ההוראות בטבלה הבאה. מופעי חוט מצטברים על כל הלוחות במודול.</li>
+					</ul>
+					<div class="table-container">
+						<table class="red-table">
+							<tr>
+								<th colspan="2" class="header">מופעי חוט אדום</th>
+							</tr>
+							<tr>
+								<th class="first-col">מופע חוט</th>
+								<th class="second-col">לחתוך אם מחובר אל:</th>
+							</tr>
+							<tr>
+								<td class="first-col">
+                                    <input type="checkbox" name="wire-seq" class="hidden-print">
+                                    <span class='red'>אדום</span>&nbsp;ראשון
+                                </td>
+								<td class="second-col">C</td>
+							</tr>
+							<tr>
+								<td class="first-col">
+                                    <input type="checkbox" name="wire-seq" class="hidden-print">
+                                    <span class='red'>אדום</span>&nbsp;שני
+                                </td>
+								<td class="second-col">B</td>
+							</tr>
+							<tr>
+								<td class="first-col">
+                                    <input type="checkbox" name="wire-seq" class="hidden-print">
+                                    <span class='red'>אדום</span>&nbsp;שלישי
+                                </td>
+								<td class="second-col">A</td>
+							</tr>
+							<tr>
+								<td class="first-col">
+                                    <input type="checkbox" name="wire-seq" class="hidden-print">
+                                    <span class='red'>אדום</span>&nbsp;רביעי
+                                </td>
+								<td class="second-col">A / C</td>
+							</tr>
+							<tr>
+								<td class="first-col">
+                                    <input type="checkbox" name="wire-seq" class="hidden-print">
+                                    <span class='red'>אדום</span>&nbsp;חמישי
+                                </td>
+								<td class="second-col">B</td>
+							</tr>
+							<tr>
+								<td class="first-col">
+                                    <input type="checkbox" name="wire-seq" class="hidden-print">
+                                    <span class='red'>אדום</span>&nbsp;שישי
+                                </td>
+								<td class="second-col">A / C</td>
+							</tr>
+							<tr>
+								<td class="first-col">
+                                    <input type="checkbox" name="wire-seq" class="hidden-print">
+                                    <span class='red'>אדום</span>&nbsp;שביעי
+                                </td>
+								<td class="second-col">לחתוך</td>
+							</tr>
+							<tr>
+								<td class="first-col">
+                                    <input type="checkbox" name="wire-seq" class="hidden-print">
+                                    <span class='red'>אדום</span>&nbsp;שמיני
+                                </td>
+								<td class="second-col">A / B</td>
+							</tr>
+							<tr>
+								<td class="first-col">
+                                    <input type="checkbox" name="wire-seq" class="hidden-print">
+                                    <span class='red'>אדום</span>&nbsp;תשיעי
+                                </td>
+								<td class="second-col">B</td>
+							</tr>
+						</table>
+						<table class="blue-table">
+							<tr>
+								<th colspan="2" class="header">מופעי חוט כחול</th>
+							</tr>
+							<tr>
+								<th class="first-col">מופע חוט</th>
+								<th class="second-col">לחתוך אם מחובר אל:</th>
+							</tr>
+							<tr>
+								<td class="first-col">
+                                    <input type="checkbox" name="wire-seq" class="hidden-print">
+                                    <span class='blue'>כחול</span>&nbsp;ראשון
+                                </td>
+								<td class="second-col">B</td>
+							</tr>
+							<tr>
+								<td class="first-col">
+                                    <input type="checkbox" name="wire-seq" class="hidden-print">
+                                    <span class='blue'>כחול</span>&nbsp;שני
+                                </td>
+								<td class="second-col">A / C</td>
+							</tr>
+							<tr>
+								<td class="first-col">
+                                    <input type="checkbox" name="wire-seq" class="hidden-print">
+                                    <span class='blue'>כחול</span>&nbsp;שלישי
+                                </td>
+								<td class="second-col">B</td>
+							</tr>
+							<tr>
+								<td class="first-col">
+                                    <input type="checkbox" name="wire-seq" class="hidden-print">
+                                    <span class='blue'>כחול</span>&nbsp;רביעי
+                                </td>
+								<td class="second-col">A</td>
+							</tr>
+							<tr>
+								<td class="first-col">
+                                    <input type="checkbox" name="wire-seq" class="hidden-print">
+                                    <span class='blue'>כחול</span>&nbsp;חמישי
+                                </td>
+								<td class="second-col">B</td>
+							</tr>
+							<tr>
+								<td class="first-col">
+                                    <input type="checkbox" name="wire-seq" class="hidden-print">
+                                    <span class='blue'>כחול</span>&nbsp;שישי
+                                </td>
+								<td class="second-col">B / C</td>
+							</tr>
+							<tr>
+								<td class="first-col">
+                                    <input type="checkbox" name="wire-seq" class="hidden-print">
+                                    <span class='blue'>כחול</span>&nbsp;שביעי
+                                </td>
+								<td class="second-col">C</td>
+							</tr>
+							<tr>
+								<td class="first-col">
+                                    <input type="checkbox" name="wire-seq" class="hidden-print">
+                                    <span class='blue'>כחול</span>&nbsp;שמיני
+                                </td>
+								<td class="second-col">A / C</td>
+							</tr>
+							<tr>
+								<td class="first-col">
+                                    <input type="checkbox" name="wire-seq" class="hidden-print">
+                                    <span class='blue'>כחול</span>&nbsp;תשיעי
+                                </td>
+								<td class="second-col">A</td>
+							</tr>
+						</table>
+						<table class="black-table">
+							<tr>
+								<th colspan="2" class="header">מופעי חוט שחור</th>
+							</tr>
+							<tr>
+								<th class="first-col">מופע חוט</th>
+								<th class="second-col">לחתוך אם מחובר אל:</th>
+							</tr>
+							<tr>
+								<td class="first-col">
+                                    <input type="checkbox" name="wire-seq" class="hidden-print">
+                                    <span class='black'>שחור</span>&nbsp;ראשון
+                                </td>
+								<td class="second-col">לחתוך</td>
+							</tr>
+							<tr>
+								<td class="first-col">
+                                    <input type="checkbox" name="wire-seq" class="hidden-print">
+                                    <span class='black'>שחור</span>&nbsp;שני
+                                </td>
+								<td class="second-col">A / C</td>
+							</tr>
+							<tr>
+								<td class="first-col">
+                                    <input type="checkbox" name="wire-seq" class="hidden-print">
+                                    <span class='black'>שחור</span>&nbsp;שלישי
+                                </td>
+								<td class="second-col">B</td>
+							</tr>
+							<tr>
+								<td class="first-col">
+                                    <input type="checkbox" name="wire-seq" class="hidden-print">
+                                    <span class='black'>שחור</span>&nbsp;רביעי
+                                </td>
+								<td class="second-col">A / C</td>
+							</tr>
+							<tr>
+								<td class="first-col">
+                                    <input type="checkbox" name="wire-seq" class="hidden-print">
+                                    <span class='black'>שחור</span>&nbsp;חמישי
+                                </td>
+								<td class="second-col">B</td>
+							</tr>
+							<tr>
+								<td class="first-col">
+                                    <input type="checkbox" name="wire-seq" class="hidden-print">
+                                    <span class='black'>שחור</span>&nbsp;שישי
+                                </td>
+								<td class="second-col">B / C</td>
+							</tr>
+							<tr>
+								<td class="first-col">
+                                    <input type="checkbox" name="wire-seq" class="hidden-print">
+                                    <span class='black'>שחור</span>&nbsp;שביעי
+                                </td>
+								<td class="second-col">A / B</td>
+							</tr>
+							<tr>
+								<td class="first-col">
+                                    <input type="checkbox" name="wire-seq" class="hidden-print">
+                                    <span class='black'>שחור</span>&nbsp;שמיני
+                                </td>
+								<td class="second-col">C</td>
+							</tr>
+							<tr>
+								<td class="first-col">
+                                    <input type="checkbox" name="wire-seq" class="hidden-print">
+                                    <span class='black'>שחור</span>&nbsp;תשיעי
+                                </td>
+								<td class="second-col">C</td>
+							</tr>
+						</table>
+                        <div class="hidden-print">
+                            <input type="checkbox" id="wire-seq-select-all" onClick="toggle(this)"> סימון / ביטול סימון
+                            <script>
+                                // Listen for click on toggle checkbox
+                                $('#wire-seq-select-all').click(function(event) {
+                                    if (this.checked) {
+                                        // Iterate each checkbox
+                                        $("input[name='wire-seq']").each(function() {
+                                            this.checked = true;
+                                        });
+                                    } else {
+                                        $("input[name='wire-seq']").each(function() {
+                                            this.checked = false;
+                                        });
+                                    }
+                                });
+                            </script>
+                        </div>
+					</div>
+				</div>
+				<div class="page-footer">
+				    <span class="page-footer page-number page-number-center">עמוד 14 מתוך 23</span>
+                    <span class="page-footer-toc"><a href="#TableOfContents">תוכן עניינים</a></span>
+                </div>
+			</div>
+		</div>
+		<div class="section">
+			<div id="Mazes" class="page page-bg-01">
+				<div class="page-header">
+					<span class="page-header-doc-title">המשיכו לדבר ואף אחד לא יתפוצץ גרסה 1-מופשט</span>
+					<span class="page-header-section-title">מבוכים</span>
+				</div>
+				<div class="page-footer absolute-footer">עמוד 15 מתוך 23</div>
+				<div class="page-content">
+					<img src="../assets/img/module-icons/MazeComponent.svg" class="diagram" />
+					<h2>בנושא המבוכים</h2>
+					<p class="flavour-text">נראה שמדובר במעין מבוך, שנגנב ככל הנראה ממצעית נייר לצלחת במסעדה.</p>
+					<ul>
+						<li>יש למצוא את המבוך עם הסימונים המעגליים התואמים.</li>
+						<li>על מנטרל הפצצה לנווט את האור הלבן למשולש האדום באמצעות כפתורי החצים.</li>
+						<li><strong>אזהרה:</strong> אין לחצות את הקווים המוצגים במבוך. קווים אלה אינם מוצגים על גבי הפצצה.</li>
+                        <li>לעיון מהיר, ה<b>עמודות</b> הייחודיות עבור מעגלי החיווי מצוינות מתחת לכל מבוך.</li>
+					</ul>
+					<div class="maze-grid" dir="ltr">
+						<img class="maze" src="../assets/img/modules/maze/maze0.svg" /><img class="maze" src="../assets/img/modules/maze/maze1.svg" /><img class="maze" src="../assets/img/modules/maze/maze2.svg" />
+                        <table class="maze-grid-table">
+                            <tr>
+                                <td>1</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>6</td>
+                            </tr>
+                        </table>
+                        <table class="maze-grid-table">
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>2</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>5</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </table>
+                        <table class="maze-grid-table">
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>4</td>
+                                <td>&nbsp;</td>
+                                <td>6</td>
+                            </tr>
+                        </table>
+                        <img class="maze" src="../assets/img/modules/maze/maze3.svg" /><img class="maze" src="../assets/img/modules/maze/maze4.svg" /><img class="maze" src="../assets/img/modules/maze/maze5.svg" />
+                        <table class="maze-grid-table">
+                            <tr>
+                                <td>1</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </table>
+                        <table class="maze-grid-table">
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </table>
+                        <table class="maze-grid-table">
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>3</td>
+                                <td>&nbsp;</td>
+                                <td>5</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </table>
+                        <img class="maze" src="../assets/img/modules/maze/maze6.svg" /><img class="maze" src="../assets/img/modules/maze/maze7.svg" /><img class="maze" src="../assets/img/modules/maze/maze8.svg" />
+                        <table class="maze-grid-table">
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>2</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </table>
+                        <table class="maze-grid-table">
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </table>
+                        <table class="maze-grid-table">
+                            <tr>
+                                <td>1</td>
+                                <td>&nbsp;</td>
+                                <td>3</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </table>
+					</div>
+				</div>
+				<div class="page-footer">
+				    <span class="page-footer page-number page-number-center">עמוד 15 מתוך 23</span>
+                    <span class="page-footer-toc"><a href="#TableOfContents">תוכן עניינים</a></span>
+                </div>
+			</div>
+		</div>
+		<div class="section">
+			<div id="Passwords" class="page page-bg-02">
+				<div class="page-header">
+					<span class="page-header-doc-title">המשיכו לדבר ואף אחד לא יתפוצץ גרסה 1-מופשט</span>
+					<span class="page-header-section-title">סיסמאות</span>
+				</div>
+				<div class="page-footer absolute-footer">עמוד 16 מתוך 23</div>
+				<div class="page-content">
+					<img src="../assets/img/module-icons/PasswordComponent.svg" class="diagram" />
+					<h2>בנושא הסיסמאות</h2>
+					<p class="flavour-text">למרבה המזל נראה כי סיסמה זו אינה עומדת בדרישות האבטחה הרגילות של הממשלה: 22 תווים, שילוב של אותיות רישיות וקטנות, מספרים בסדר אקראי וללא פלינדרומים שאורכם גדול מ-3 תווים.</p>
+					<ul>
+						<li>הלחצנים מעל ומתחת לכל אות יעברו בין האפשרויות למצב זה.</li>
+						<li>רק שילוב אחד של האותיות הזמינות יתאים לסיסמה שלהלן.</li>
+						<li>לאחר הגדרת המילה הנכונה יש ללחוץ על הכפתור שליחה.</li>
+                        <br />
+                        <li>עבור שיטה זו, נדרשים רק לעמודה השלישית והחמישית של הסיסמה. אם יש מספר אפשרויות, יש לבקש עמודה נוספת כמו הראשונה או הרביעית.</li>
+                        <li><b>השורה הראשונה</b> היא האות השלישית, <b>השורה השנייה</b> היא האות החמישית.</li>
+					</ul>
+                    
+                    <p class="hidden-print" style="margin:0;">ניתן להזין את האפשרויות של כל אות בטבלה, להלן. אותיות רלוונטיות ייצבעו בצבע ירוק.</p>
+                    <table class="password-options-table hidden-print">
+                        <br />
+                        <tr>
+                            <td>אות שלישית:</td>
+                            <td><input type="text" name="password-3rd-1" maxlength="1"></td>
+                            <td><input type="text" name="password-3rd-2" maxlength="1"></td>
+                            <td><input type="text" name="password-3rd-3" maxlength="1"></td>
+                            <td><input type="text" name="password-3rd-4" maxlength="1"></td>
+                            <td><input type="text" name="password-3rd-5" maxlength="1"></td>
+                            <td><input type="text" name="password-3rd-6" maxlength="1"></td>
+                            <td><input type="button" value="ניקוי אפשרויות" onclick="cleartxt3rd()"></td>
+                        </tr>
+                        <script>
+                            function cleartxt3rd() {
+                                $("input[name*='password-3rd-']").val("");
+                                // clear colored options
+                                var arr = ["A", "E", "G", "H", "I", "L", "O", "R", "T", "U", "V"];
+                                for ( var i = 0, l = arr.length; i < l; i++ ) {
+                                    var third = arr[i];
+                                    $("th[name=3rd-" + third + "]").css('background-color','#000');
+                                }
+                            }
+                        </script>
+                        <tr>
+                            <td>אות חמישית:</td>
+                            <td><input type="text" name="password-5th-1" maxlength="1"></td>
+                            <td><input type="text" name="password-5th-2" maxlength="1"></td>
+                            <td><input type="text" name="password-5th-3" maxlength="1"></td>
+                            <td><input type="text" name="password-5th-4" maxlength="1"></td>
+                            <td><input type="text" name="password-5th-5" maxlength="1"></td>
+                            <td><input type="text" name="password-5th-6" maxlength="1"></td>
+                            <td><input type="button" value="ניקוי אפשרויות" onclick="cleartxt5th()"></td>
+                        </tr>
+                        <script>
+                            function cleartxt5th() {
+                                $("input[name*='password-5th-']").val("");
+                                // clear colored options
+                                var arr = ["D", "E", "G", "H", "K", "L", "N", "R", "T", "W", "Y"];
+                                for ( var i = 0, l = arr.length; i < l; i++ ) {
+                                    var fifth = arr[i];
+                                    $("td[name=5th-" + fifth + "]").css('background-color','none');
+                                }
+                            }
+                        </script>
+                    </table>
+                    <script>
+                        var container = document.getElementsByClassName("password-options-table")[0];
+                        container.onkeyup = function(e) {
+                            var target = e.srcElement || e.target;
+                            var maxLength = parseInt(target.attributes["maxlength"].value, 10);
+                            var myLength = target.value.length;
+                            if (myLength >= maxLength) {
+                                var next = target;
+                                while (next = next.nextElementSibling) {
+                                    if (next == null)
+                                        break;
+                                    if (next.tagName.toLowerCase() === "input") {
+                                        next.focus();
+                                        break;
+                                    }
+                                }
+                            }
+                            // Move to previous field if empty (user pressed backspace)
+                            else if (myLength === 0) {
+                                var previous = target;
+                                while (previous = previous.previousElementSibling) {
+                                    if (previous == null)
+                                        break;
+                                    if (previous.tagName.toLowerCase() === "input") {
+                                        previous.focus();
+                                        break;
+                                    }
+                                }
+                            }
+                        }
+                    </script>
+                    <br />
+                    <div dir="ltr">
+                        <table class="password-table">
+                            <thead>
+                                <tr>
+                                    <th name='3rd-A' colspan="4">A</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td name='5th-E'>E</td>
+                                <td name='5th-N'>N</td>
+                                <td name='5th-L'>L</td>
+                                <td name='5th-T'>T</td>
+                            </tr>
+                            <tr>
+                                <td>PLACE</td>
+                                <td>
+                                    AGAIN<br />
+                                    LEARN
+                                </td>
+                                <td>SMALL</td>
+                                <td>PLANT</td>
+                            </tr>
+                        </table>
+                        <table class="password-table">
+                            <thead>
+                                <tr>
+                                    <th name='3rd-E' colspan="5">E</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td name='5th-E'>E</td>
+                                <td name='5th-L'>L</td>
+                                <td name='5th-R'>R</td>
+                                <td name='5th-T'>T</td>
+                                <td name='5th-Y'>Y</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    THERE<br />
+                                    THESE<br />
+                                    WHERE
+                                </td>
+                                <td>SPELL</td>
+                                <td>THEIR</td>
+                                <td>GREAT</td>
+                                <td>EVERY</td>
+                            </tr>
+                        </table>
+                        <table class="password-table">
+                            <thead>
+                                <tr>
+                                    <th name='3rd-G' colspan="1">G</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td name='5th-T'>T</td>
+                            </tr>
+                            <tr>
+                                <td>RIGHT</td>
+                            </tr>
+                        </table>
+                        <table class="password-table">
+                            <thead>
+                                <tr>
+                                    <th name='3rd-H' colspan="1">H</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td name='5th-R'>R</td>
+                            </tr>
+                            <tr>
+                                <td>OTHER</td>
+                            </tr>
+                        </table>
+                        <br /><br />
+                        <table class="password-table">
+                            <thead>
+                                <tr>
+                                    <th name='3rd-I' colspan="6">I</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td name='5th-E'>E</td>
+                                <td name='5th-G'>G</td>
+                                <td name='5th-H'>H</td>
+                                <td name='5th-K'>K</td>
+                                <td name='5th-L'>L</td>
+                                <td name='5th-T'>T</td>
+                            </tr>
+                            <tr>
+                                <td>RIGHT</td>
+                                <td>THING</td>
+                                <td>WHICH</td>
+                                <td>THINK</td>
+                                <td>STILL</td>
+                                <td>POINT</td>
+                            </tr>
+                        </table>
+                        <table class="password-table">
+                            <thead>
+                                <tr>
+                                    <th name='3rd-L' colspan="1">L</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td name='5th-W'>W</td>
+                            </tr>
+                            <tr>
+                                <td>BELOW</td>
+                            </tr>
+                        </table>
+                        <table class="password-table">
+                            <thead>
+                                <tr>
+                                    <th name='3rd-O' colspan="1">O</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td name='5th-T'>T</td>
+                            </tr>
+                            <tr>
+                                <td>ABOUT</td>
+                            </tr>
+                        </table>
+                        <table class="password-table">
+                            <thead>
+                                <tr>
+                                    <th name='3rd-R' colspan="3">R</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td name='5th-D'>D</td>
+                                <td name='5th-E'>E</td>
+                                <td name='5th-T'>T</td>
+                            </tr>
+                            <tr>
+                                <td>WORLD</td>
+                                <td>
+                                    LARGE<br />
+                                    THERE
+                                </td>
+                                <td>FIRST</td>
+                            </tr>
+                        </table>
+                        <br /><br />
+                        <table class="password-table">
+                            <thead>
+                                <tr>
+                                    <th name='3rd-T' colspan="1">T</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td name='5th-R'>R</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    WATER<br />
+                                    AFTER
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="password-table">
+                            <thead>
+                                <tr>
+                                    <th name='3rd-U' colspan="3">U</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td name='5th-D'>D</td>
+                                <td name='5th-E'>E</td>
+                                <td name='5th-Y'>Y</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    COULD<br />
+                                    FOUND<br />
+                                    SOUND<br />
+                                    WOULD
+                                </td>
+                                <td>HOUSE</td>
+                                <td>STUDY</td>
+                            </tr>
+                        </table>
+                        <table class="password-table">
+                            <thead>
+                                <tr>
+                                    <th name='3rd-V' colspan="1">V</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td name='5th-R'>R</td>
+                            </tr>
+                            <tr>
+                                <td>NEVER</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <script>
+                        $("input[name*='password-3rd-']").keyup(function() {
+                            var third1 = $("input[name='password-3rd-1']").val().toUpperCase();
+                            var third2 = $("input[name='password-3rd-2']").val().toUpperCase();
+                            var third3 = $("input[name='password-3rd-3']").val().toUpperCase();
+                            var third4 = $("input[name='password-3rd-4']").val().toUpperCase();
+                            var third5 = $("input[name='password-3rd-5']").val().toUpperCase();
+                            var third6 = $("input[name='password-3rd-6']").val().toUpperCase();
+                            var arr = ["A", "E", "G", "H", "I", "L", "O", "R", "T", "U", "V"];
+                            for ( var i = 0, l = arr.length; i < l; i++ ) {
+                                var third = arr[i];
+                                if (third1 == third || third2 == third || third3 == third || third4 == third || third5 == third || third6 == third) {
+                                    $("th[name=3rd-" + third + "]").css('background-color','green');
+                                }
+
+                                else { $("th[name=3rd-" + third + "]").css('background-color','#000'); }
+                            }
+                        });
+                        $("input[name*='password-5th-']").keyup(function() {
+                            var fifth1 = $("input[name='password-5th-1']").val().toUpperCase();
+                            var fifth2 = $("input[name='password-5th-2']").val().toUpperCase();
+                            var fifth3 = $("input[name='password-5th-3']").val().toUpperCase();
+                            var fifth4 = $("input[name='password-5th-4']").val().toUpperCase();
+                            var fifth5 = $("input[name='password-5th-5']").val().toUpperCase();
+                            var fifth6 = $("input[name='password-5th-6']").val().toUpperCase();
+                            var arr = ["D", "E", "G", "H", "K", "L", "N", "R", "T", "W", "Y"];
+                            for ( var i = 0, l = arr.length; i < l; i++ ) {
+                                var fifth = arr[i];
+                                if (fifth1 == fifth || fifth2 == fifth || fifth3 == fifth || fifth4 == fifth || fifth5 == fifth || fifth6 == fifth) {
+                                    $("td[name=5th-" + fifth + "]").css('background-color','limegreen');
+                                }
+
+                                else { $("td[name=5th-" + fifth + "]").css('background-color','none'); }
+                            }
+                        });
+                    </script>
+				</div>
+				<div class="page-footer">
+				    <span class="page-footer page-number page-number-center">עמוד 16 מתוך 23</span>
+                    <span class="page-footer-toc"><a href="#TableOfContents">תוכן עניינים</a></span>
+                </div>
+			</div>
+		</div>
+		<div class="section">
+			<div id="Section2" class="page section-title page-bg-03">
+				<div class="page-header">
+					<span class="page-header-doc-title">המשיכו לדבר ואף אחד לא יתפוצץ גרסה 1-מופשט</span>
+					<span class="page-header-section-title">סעיף 2: מודולים תלותיים</span>
+				</div>
+				<div class="page-footer absolute-footer">עמוד 17 מתוך 23</div>
+				<div class="page-content">
+					<div class="vertical-spacer"></div>
+					<img src="../assets/img/module-icons/NeedyComponent.svg" class="diagram" />
+					<div class="new-block-formatting-context">
+						<h1>סעיף 2: מודולים תלותיים</h1>
+						<p>לא ניתן לנטרל את המודולים התלותיים, אך אלה מהווים סכנה חוזרת ונשנית.</p>
+						<p>מודולים תלותיים ניתנים לזיהוי באמצעות מונה הזמן הדו&#8209;ספרתי הקטן שבחלקם העליון. אינטראקציה עם הפצצה עלולה לגרום להפעלתם. מרגע ההפעלה, יש לטפל במודולים תלותיים אלה באופן חוזר ונשנה לפני שנגמר הזמן שלהם כדי למנוע פסילה.</p>
+						<p>הישארו דרוכים: מודולים תלותיים עשויים להפעיל עצמם מחדש בכל עת.</p>
+					</div>
+				</div>
+				<div class="page-footer">
+				    <span class="page-footer page-number page-number-center">עמוד 17 מתוך 23</span>
+                    <span class="page-footer-toc"><a href="#TableOfContents">תוכן עניינים</a></span>
+                </div>
+			</div>
+		</div>
+		<div class="section">
+			<div id="VentingGas" class="page page-bg-04">
+				<div class="page-header">
+					<span class="page-header-doc-title">המשיכו לדבר ואף אחד לא יתפוצץ גרסה 1-מופשט</span>
+					<span class="page-header-section-title">גז אוורור</span>
+				</div>
+				<div class="page-footer absolute-footer">עמוד 18 מתוך 23</div>
+				<div class="page-content">
+					<img src="../assets/img/module-icons/NeedyVentComponent.svg" class="diagram" />
+					<h2>בנושא גז האוורור</h2>
+					<p class="flavour-text">פריצה למחשבים היא עבודה קשה! ובכן, בדרך כלל. ככל הנראה שניתן לבצע את העבודה הזו על ידי צעצוע 'ציפור שותה' פשוט שילחץ על אותו מקש שוב ושוב.</p>
+					<ul>
+						<li>יש להשיב להנחיות המחשב באמצעות לחיצה על "Y" עבור "כן" או "N" עבור "לא".</li>
+                        <br>
+                        <li><b>טיפ:</b> השאלה יכולה להיות "Vent gas?" או "Detonate?".
+                        כדי להיות בטוחים, אפשר ללחוץ תחילה על "N".</li>
+                        <ul>
+                            <li>כשעונים "לא" כאשר השאלה היא "Vent gas?" המודול יזכיר לכם כי "Venting prevents explosions".</li>
+                            <li>לעומת זאת, אם עונים "כן" כאשר השאלה היא "Detonate?" הפצצה תתפוצץ ללא אזהרה.</li>
+                        </ul>
+					</ul>
+				</div>
+				<div class="page-footer">
+				    <span class="page-footer page-number page-number-center">עמוד 18 מתוך 23</span>
+                    <span class="page-footer-toc"><a href="#TableOfContents">תוכן עניינים</a></span>
+                </div>
+			</div>
+		</div>
+		<div class="section">
+			<div id="CapacitorDischarge" class="page page-bg-05">
+				<div class="page-header">
+					<span class="page-header-doc-title">המשיכו לדבר ואף אחד לא יתפוצץ גרסה 1-מופשט</span>
+					<span class="page-header-section-title">פריקת קבלים</span>
+				</div>
+				<div class="page-footer absolute-footer">עמוד 19 מתוך 23</div>
+				<div class="page-content">
+					<img src="../assets/img/module-icons/NeedyDischargeComponent.svg" class="diagram" />
+					<h2>בנושא פריקת קבלים</h2>
+					<p class="flavour-text">הניחוש שלי הוא שזה קיים סתם בשביל לתפוס את תשומת הלב שלכם, כי אם זו לא הסיבה, עשו פה עבודת אלקטרוניקה די גרועה.</p>
+					<ul>
+						<li>יש לפרוק את הקבל לפני שיגיע לעומס יתר על ידי החזקת הידית.</li>
+					</ul>
+				</div>
+				<div class="page-footer">
+				    <span class="page-footer page-number page-number-center">עמוד 19 מתוך 23</span>
+                    <span class="page-footer-toc"><a href="#TableOfContents">תוכן עניינים</a></span>
+                </div>
+			</div>
+		</div>
+		<div class="section">
+			<div id="Knobs" class="page needy-knob page-bg-06">
+				<div class="page-header">
+					<span class="page-header-doc-title">המשיכו לדבר ואף אחד לא יתפוצץ גרסה 1-מופשט</span>
+					<span class="page-header-section-title">ידיות</span>
+				</div>
+				<div class="page-footer absolute-footer">עמוד 20 מתוך 23</div>
+				<div class="page-content">
+					<img src="../assets/img/module-icons/NeedyKnobComponent.svg" class="diagram" />
+					<h2>בנושא הידיות</h2>
+					<p class="flavour-text">מסובך ללא צורך ותלותי ללא סוף. תארו לעצמכם שמומחיות כזו הייתה משמשת לייצור משהו אחר מלבד חידות שטניות.</p>
+					<ul>
+						<li>ניתן להפנות את הידית לאחד מארבעה מצבים.</li>
+						<li>על הידית להיות במצב הנכון כאשר מונה הזמן של המודול מגיע לאפס.</li>
+						<li>את המיקום הנכון ניתן לקבוע על סמך תצורת ההפעלה (מוארת/כבויה) של שתים-עשרה נוריות הלד.</li>
+						<li>מצבי הידית הן ביחס לתווית "UP", שעלולה להיות מסובבת.</li>
+					</ul>
+                    <br>
+                    <table align="center" style="border:none;">
+                        <tbody align="center">
+                            <tr>
+                                <td style="border:none;">נדרשים לדעת רק את שש נוריות הלד השמאליות</td>
+                                <td style="border:none;">התווית "UP" עלולה שלא להופיע כלפי מעלה</td>
+                            </tr>
+                            <tr>
+                                <td style="border:none;"><img src="img/needymodules/knobs/left-6.png" width="151"></td>
+                                <td style="border:none;"><img src="img/needymodules/knobs/knob-rotated.png" width="50"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p align="center"> </p>
+					<table class="needy-knob-table">
+					    <tbody>
+					        <tr>
+					            <td><center><img src="img/needymodules/knobs/knob-up.png" width="60" /><br>למעלה</center></td>
+					            <td colspan="2"><center><img src="img/needymodules/knobs/light-indicator.png" width="50" /><br>x4</center></td>
+					        </tr>
+					        <tr>
+					            <td><center><img src="img/needymodules/knobs/knob-left.png" width="60" /><br>שמאל</center></td>
+					            <td><center><img src="img/needymodules/knobs/light-indicator.png" width="50" /></center> x0</td>
+					            <td><center><img src="img/needymodules/knobs/light-indicator.png" width="50" /> x1</center></td>
+					        </tr>
+					        <tr>
+					            <td><center><img src="img/needymodules/knobs/knob-down.png" width="60" /><br>למטה</center></td>
+					            <td><center><img src="img/needymodules/knobs/down-setting.png" width="151" style="min-width: 151px;min-height: 95px;" /></td>
+					            <td><img src="img/needymodules/knobs/light-indicator.png" width="50" /> x3</center></td>
+					        </tr>
+					        <tr>
+					            <td><center><img src="img/needymodules/knobs/knob-right.png" width="60" /><br>ימין</center></td>
+					            <td colspan="2"><center><img src="img/needymodules/knobs/right-setting.png" width="151" style="min-width: 151px;min-height: 95px;" /></td>
+					        </tr>
+					    </tbody>
+					</table>
+					<br /><br />
+					<p class="needy-diagram-label"><img src="img/needymodules/knobs/light-indicator.png" width="20"> = נורית לד מוארת</p>
+				</div>
+				<div class="page-footer">
+				    <span class="page-footer page-number page-number-center">עמוד 20 מתוך 23</span>
+                    <span class="page-footer-toc"><a href="#TableOfContents">תוכן עניינים</a></span>
+                </div>
+			</div>
+		</div>
+		<div class="section">
+			<div id="AppendixA" class="page appendix-indicators page-bg-07">
+				<div class="page-header">
+					<span class="page-header-doc-title">המשיכו לדבר ואף אחד לא יתפוצץ גרסה 1-מופשט</span>
+					<span class="page-header-section-title">נספח א'</span>
+				</div>
+				<div class="page-footer absolute-footer">עמוד 21 מתוך 23</div>
+				<div class="page-content">
+					<h2>נספח א': זיהוי נורות בקרה</h2>
+					<p>נורות בקרה מתויגות ניתן למצוא על גבי צידי הפצצה.</p>
+					<img src="../assets/img/appendix/indicators/IndicatorWidget.svg" id="appendix-indicator-img" />
+					<h3>תיוגים נפוצים</h3>
+					<ul>
+						<li>SND</li>
+						<li>CLR</li>
+						<li>CAR</li>
+						<li>IND</li>
+						<li>FRQ</li>
+						<li>SIG</li>
+						<li>NSA</li>
+						<li>MSA</li>
+						<li>TRN</li>
+						<li>BOB</li>
+						<li>FRK</li>
+					</ul>
+				</div>
+				<div class="page-footer">
+				    <span class="page-footer page-number page-number-center">עמוד 21 מתוך 23</span>
+                    <span class="page-footer-toc"><a href="#TableOfContents">תוכן עניינים</a></span>
+                </div>
+			</div>
+		</div>
+		<div class="section">
+			<div id="AppendixB" class="page appendix-batteries page-bg-01">
+				<div class="page-header">
+					<span class="page-header-doc-title">המשיכו לדבר ואף אחד לא יתפוצץ גרסה 1-מופשט</span>
+					<span class="page-header-section-title">נספח ב'</span>
+				</div>
+				<div class="page-footer absolute-footer">עמוד 22 מתוך 23</div>
+				<div class="page-content">
+					<h2>נספח ב': זיהוי סוללות</h2>
+					<p>סוללות מסוגים נפוצים ניתן למצוא בתוך מארזים על גבי צידי הפצצה.</p>
+					<table>
+						<tr>
+							<th>סוללה</th>
+							<th>סוג</th>
+						</tr>
+						<tr>
+							<td><img src="../assets/img/appendix/batteries/Battery-AA.svg" id="appendix-battery-AA-img" /></td>
+							<td>AA</td>
+						</tr>
+						<tr>
+							<td><img src="../assets/img/appendix/batteries/Battery-D.svg" id="appendix-battery-D-img" /></td>
+							<td>D</td>
+						</tr>
+					</table>
+				</div>
+				<div class="page-footer">
+				    <span class="page-footer page-number page-number-center">עמוד 22 מתוך 23</span>
+                    <span class="page-footer-toc"><a href="#TableOfContents">תוכן עניינים</a></span>
+                </div>
+			</div>
+		</div>
+		<div class="section">
+			<div id="AppendixC" class="page appendix-ports page-bg-02">
+				<div class="page-header">
+					<span class="page-header-doc-title">המשיכו לדבר ואף אחד לא יתפוצץ גרסה 1-מופשט</span>
+					<span class="page-header-section-title">נספח ג'</span>
+				</div>
+				<div class="page-footer absolute-footer">עמוד 23 מתוך 23</div>
+				<div class="page-content">
+					<h2>נספח ג': זיהוי מחברי יציאה (פורטים)</h2>
+					<p>ניתן למצוא יציאות דיגיטליות ואנלוגיות על גבי צידי הפצצה.</p>
+					<table>
+						<tr>
+							<th>מחבר יציאה (פורט)</th>
+							<th>שם</th>
+						</tr>
+						<tr>
+							<td><img src="../assets/img/appendix/ports/DVI.svg" id="appendix-ports-dvi-img" /></td>
+							<td>DVI-D</td>
+						</tr>
+						<tr>
+							<td><img src="../assets/img/appendix/ports/Parallel.svg" id="appendix-ports-parallel-img" /></td>
+							<td>מקבילי<br /></td>
+						</tr>
+						<tr>
+							<td><img src="../assets/img/appendix/ports/PS2.svg" id="appendix-ports-ps2-img" /></td>
+							<td>PS/2</td>
+						</tr>
+						<tr>
+							<td><img src="../assets/img/appendix/ports/RJ45.svg" id="appendix-ports-rj45-img" /></td>
+							<td>RJ-45</td>
+						</tr>
+						<tr>
+							<td><img src="../assets/img/appendix/ports/Serial.svg" id="appendix-ports-serial-img" /></td>
+							<td>טורי</td>
+						</tr>
+						<tr>
+							<td><img src="../assets/img/appendix/ports/StereoRCA.svg" id="appendix-ports-rca-img" /></td>
+                            <td>סטריאו RCA</td>
+						</tr>
+					</table>
+				</div>
+				<div class="page-footer">
+				    <span class="page-footer page-number page-number-center">עמוד 23 מתוך 23</span>
+                    <span class="page-footer-toc"><a href="#TableOfContents">תוכן עניינים</a></span>
+                </div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

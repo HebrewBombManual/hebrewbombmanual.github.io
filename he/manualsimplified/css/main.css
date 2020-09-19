@@ -892,10 +892,6 @@ q {
 	border: 1px solid black;
 }
 
-.whos-on-first-step2-table {
-	width: 105%;
-}
-
 .whos-on-first-step2-table th {
     padding-left: .2em;
 	padding-right: .2em;
@@ -904,7 +900,7 @@ q {
 }
 
 .whos-on-first-step2-table td {
-    font-size: .78em;
+    font-size: 1em;
 }
 
 

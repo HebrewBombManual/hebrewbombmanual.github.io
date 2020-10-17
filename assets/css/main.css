@@ -343,6 +343,23 @@ p, div > ul, div > ol {
     color: #fbf8f8;
 }
 
+.badge {
+    position: absolute;
+    height: 50px !important;
+    width: 50px !important;
+    right: 23%;
+    top: -6%;
+}
+
+.badge-note {
+    transform: rotate(-45deg);
+    position: absolute;
+    right: 25%;
+    top: 1%;
+    color: white;
+    z-index: 1;
+}
+
 .continue-button a {
     padding: 1em;
     background-color: #ba4423;
@@ -364,7 +381,7 @@ p, div > ul, div > ol {
 
 .main-manual-version {
     width: 31em;
-    margin: 0 auto 4em;
+    margin: 0 auto 2em;
 }
 
 .main-manual-version:last-child {

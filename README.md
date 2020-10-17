@@ -12,7 +12,7 @@ English version of the game:
 * Microsoft Excel (`.xlsx`) Ultimate Toolkit for better results.
 
 Hebrew version of the game:
-* Hebrew translation (official translation, same as appears @ https://www.bombmanual.com/he)
+* Hebrew translation (official translation, same as appears at https://www.bombmanual.com/he ![External Link](https://user-images.githubusercontent.com/136959/44433186-de548e80-a56a-11e8-8947-d3331bd6d7a1.png))
 * Simplified Hebrew translation (easier to read).
 * Microsoft Excel (`.xlsx`) Ultimate Toolkit for better results.
 

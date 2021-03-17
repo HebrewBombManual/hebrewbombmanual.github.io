@@ -37,3 +37,17 @@ $(window).scroll(function() {
         $('#toTop').fadeOut();
     }
 });
+
+$(() => {
+    $('input[name*="password-1st"]').on('keyup', (e) => {
+        var elm = $(e.currentTarget).attr('name');
+        var sel = parseInt(elm.substr(-1)) + 1;
+        $('input[name="password-1st-' + sel + '"]').focus().select()
+    })
+
+    $('input[name*="password-2nd"]').on('keyup', (e) => {
+        var elm = $(e.currentTarget).attr('name');
+        var sel = parseInt(elm.substr(-1)) + 1;
+        $('input[name="password-2nd-' + sel + '"]').focus().select()
+    })
+})

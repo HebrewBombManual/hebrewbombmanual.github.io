@@ -1,5 +1,4 @@
 $( document ).ready(function() {
-    console.log( "document ready!" );
         var $sticky = $('.sticky');
         if (screen.width > 768) {
         var $stickyrStopper = $('.sticky-stopper');

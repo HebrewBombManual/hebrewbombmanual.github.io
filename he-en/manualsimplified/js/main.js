@@ -13,3 +13,20 @@ $(window).scroll(function() {
         $('#toTop').fadeOut();
     }
 });
+
+$(() => {
+    $('input[name*="password-"]').on("click", function () {
+        $(this).select();
+     })
+    $('input[name*="password-3rd"]').on('keyup', (e) => {
+        var elm = $(e.currentTarget).attr('name');
+        var sel = parseInt(elm.substr(-1)) + 1;
+        $('input[name="password-3rd-' + sel + '"]').focus().select()
+    })
+
+    $('input[name*="password-5th"]').on('keyup', (e) => {
+        var elm = $(e.currentTarget).attr('name');
+        var sel = parseInt(elm.substr(-1)) + 1;
+        $('input[name="password-5th-' + sel + '"]').focus().select()
+    })
+})

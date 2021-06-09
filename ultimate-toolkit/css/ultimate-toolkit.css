@@ -1,3 +1,9 @@
+html {
+    font-family: 'Rubik', 'Noto Sans Hebrew', 'Cabin', sans-serif;
+    font-size: 1em;
+    line-height: normal;
+}
+
 body, p, div > ul, div > ol {
     font-size: 16px !important;
 }
@@ -132,7 +138,7 @@ table.settings-table {
 img.guide {
     border: 1px solid #000000;
     max-width: 734px;
-    margin: 0 0 2em;
+    margin: 1em 0 2em;
     display: block;
     margin-left: auto;
     margin-right: auto;

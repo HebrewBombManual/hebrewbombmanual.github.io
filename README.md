@@ -18,7 +18,7 @@ Hebrew version of the game:
 
 ## Authors
 
-* **Erel Adoni** - *Initial work* - [E-RELevant](https://github.com/E-RELevant)
+* [erelado](https://github.com/erelado) - **Erel Adoni** - *Initial work*
 
 See also the list of [contributors](https://github.com/HebrewBombManual/hebrewbombmanual.github.io/contributors) who participated in this project.
 
